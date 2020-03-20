@@ -1,2 +1,3 @@
-# CoronaChat
-Getting trustworthy information about Corona!
+# CoronaBibliothekar
+
+Falsche Informationen in Social Media mit guten Quellen kontern!
