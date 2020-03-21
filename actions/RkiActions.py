@@ -83,12 +83,12 @@ class ActionCurrentBundeslaender(Action):
             sorted_bundeslaender = list(reversed(sorted(zip(infected, bundeslaender))))
 
             dispatcher.utter_message(text="Laut RKI sind sind aktuell {}({} Infektionen), {}({} Infektionen) und {}({} Infektionen) am schlimmsten Betroffen".format(
-                sorted_bundeslaender[0][0],
                 sorted_bundeslaender[0][1],
-                sorted_bundeslaender[1][0],
+                sorted_bundeslaender[0][0],
                 sorted_bundeslaender[1][1],
-                sorted_bundeslaender[2][0],
-                sorted_bundeslaender[2][1]
+                sorted_bundeslaender[1][0],
+                sorted_bundeslaender[2][1],
+                sorted_bundeslaender[2][0]
             ))
 
         except Exception as e:

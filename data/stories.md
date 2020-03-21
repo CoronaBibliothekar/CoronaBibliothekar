@@ -8,7 +8,6 @@
 * what_is{"topic": "covid"}
     - action_what_is
 
-
 ## difference
 * difference{"topic": "mers"}
     - action_difference
@@ -25,27 +24,23 @@
 * difference{"topic": "flu"}
     - action_difference
     
-
 ## difference what is
 * difference{"topic": "sars"}
     - action_difference
 * what_is{"topic": "covid"}
     - action_what_is
 
-
 ## currently infected
 * current_infected
     - action_current_infected
     
-<<<<<<< HEAD
 ## greet
 * greet
     - utter_greet
     
 ## goodbye
-* bye
+* goodbye
     - utter_bye
-=======
 
 ## currently dead
 * current_deaths
@@ -54,4 +49,3 @@
 ## currenly bundeslaender
 * current_bundeslaender
     - action_current_bundeslaender
->>>>>>> 400bf3254e1ad601053ac0a8daac043074835c58
