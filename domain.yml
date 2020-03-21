@@ -6,6 +6,9 @@ intents:
   - covid_sars_mers
 
 responses:
+  utter_default:
+  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten"
+
   utter_greet:
   - text: "Hey! How are you?"
 
