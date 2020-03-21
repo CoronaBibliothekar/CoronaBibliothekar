@@ -1,3 +1,14 @@
+## intent:greet
+- hallo
+- guten morgen
+- hi
+- guten tag
+
+## intent:goodbye
+- tschüss
+- auf wiedersehen!
+- bis später
+
 ## intent:what_is
 - Was ist das [Coronavirus](topic) 
 - Was hat es mit dem [Coronavirus](topic) auf sich

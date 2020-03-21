@@ -37,6 +37,15 @@
 * current_infected
     - action_current_infected
     
+<<<<<<< HEAD
+## greet
+* greet
+    - utter_greet
+    
+## goodbye
+* bye
+    - utter_bye
+=======
 
 ## currently dead
 * current_deaths
@@ -45,3 +54,4 @@
 ## currenly bundeslaender
 * current_bundeslaender
     - action_current_bundeslaender
+>>>>>>> 400bf3254e1ad601053ac0a8daac043074835c58
