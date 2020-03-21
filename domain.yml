@@ -37,10 +37,10 @@ responses:
   utter_default:
   - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten"
 
-  action_greet:
+  utter_greet:
   - text: "Hallo!"
 
-  action_bye:
+  utter_bye:
   - text: "Auf Wiedersehen !"
 
 
