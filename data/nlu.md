@@ -8,6 +8,8 @@
 - Was sind Coronaviren
 - Corona
 - Ich möchte wissen was das Corona ist.
+- Kennst du das Corona Virus
+- Was kannst du mir zum Coronavirus sagen.
 
 ## intent:what_is_covid
 - Was ist Covid 19
@@ -20,6 +22,7 @@
 - was heißt Covid
 - Das Virus
 - Ich möchte wissen was Covid-19 ist.
+- Kennst du Covid-19?
 
 ## intent:virus_origin
 - Woher kommt das Virus
@@ -34,6 +37,8 @@
 - Wo ist es her?
 - Ich möchte wissen, woher Covid-19 kommt.
 - Woher kommt das Virus?
+- Weißt du woher das Virus kommt
+- Kannst du mir sagen woher das virus kommt
 
 ## intent:difference_flu_covid
 - Wo liegen die unterschiede zwischen der Grippe und dem Covid19 Virus
@@ -45,6 +50,7 @@
 - Was unterscheidet Corona und Grippe?
 - Ich möchte wissen, wie ich Covid-19 von einer Grippe unterscheiden kann.
 - Was ist mit der normalen Grippe?
+- Weißt du wo die unterschiede zur grippe liegen
 
 ## intent:covid_sars_mers
 - Was ist SARS?
@@ -56,3 +62,5 @@
 - ist das Coronavirus mit Mers vergleichbar
 - Wird das Coronavirus so schlimm wie Sars
 - ist Covid-19 so gefährlich wie Mers
+- Kannst du mir sagen inwiefern sich Mers und Corona unterscheiden
+- Weißt du ob es unterschiede zu Sars gibt
