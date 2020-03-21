@@ -1,28 +1,26 @@
-## intent:what_is_coronavirus
-- Was ist das Coronavirus 
-- Was ist der Virus
-- Was hat es mit dem Coronavirus auf sich
-- Coronavirus
-- Coronaviren
-- Corona Virus
-- Was sind Coronaviren
-- Corona
-- Ich möchte wissen was das Corona ist.
-- Kennst du das Corona Virus
-- Was kannst du mir zum Coronavirus sagen.
-
-## intent:what_is_covid
-- Was ist Covid 19
-- Was bedeutet Covid19
-- Covid-19
-- covid19
-- Bedeutung covid 19
-- Kannst du mir sagen was Covid19 bedeutet.
-- covid
-- was heißt Covid
-- Das Virus
-- Ich möchte wissen was Covid-19 ist.
-- Kennst du Covid-19?
+## intent:what_is
+- Was ist das [Coronavirus](topic) 
+- Was hat es mit dem [Coronavirus](topic) auf sich
+- [Coronavirus](topic)
+- [Coronaviren](topic)
+- [Corona Virus](topic)
+- Was sind [Coronaviren](topic)
+- [Corona](topic)
+- Ich möchte wissen was das [Corona](topic) ist.
+- Kennst du das [Corona Virus](topic)
+- Was kannst du mir zum [Coronavirus](topic) sagen.
+- Was weißt du über das [Coronavirus](topic)
+- Was ist [Covid 19](topic)
+- Was bedeutet [Covid19](topic)
+- [Covid-19](topic)
+- [covid19](topic)
+- Bedeutung [covid 19](topic)
+- Kannst du mir sagen was [Covid19](topic) bedeutet.
+- [covid](topic)
+- was heißt [Covid](topic)
+- Das [Virus](topic)
+- Ich möchte wissen was [Covid-19](topic) ist.
+- Kennst du [Covid-19](topic)?
 
 ## intent:virus_origin
 - Woher kommt das Virus

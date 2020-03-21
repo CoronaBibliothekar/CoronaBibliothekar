@@ -1,9 +1,17 @@
 intents:
-  - what_is_coronavirus
-  - what_is_covid
+  - what_is
   - virus_origin
   - difference_flu_covid
   - covid_sars_mers
+
+actions:
+  - action_what_is
+
+slots:
+  topic:
+    type: text
+
+
 
 responses:
   utter_default:
