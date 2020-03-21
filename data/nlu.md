@@ -60,3 +60,42 @@
 - ist Covid-19 so gefährlich wie [Mers](topic)
 - Kannst du mir sagen inwiefern sich [Mers](topic) und Corona unterscheiden
 - Weißt du ob es unterschiede zu [Sars](topic) gibt
+
+
+##intent:prpability_infection
+- Was ist die Wahrscheinlichkeit dass man COVID -19 kriegt?
+- Wie warscheinlich ist es, dass ich COVID-19 kriege
+- Wahrscheinlichkiet dass ich das bekomme
+- Risiko für mich
+- Wie groß ist die wahrscheinlichkeit das ich mich infiziere
+- Wie groß ist die Chance das ich mir das einfange
+- Wahrscheinlichkeit infektion
+- Chance Infektion
+- Mit welcher Wahrscheinlichkeit werde ich mich infizieren.
+
+
+## intent:antibiotics
+- Sind Antibiotika wirksam bei der Vorbeugung oder Behandlung des COVID-19?
+- Helfen Antibiotika dagegen? 
+- Kann ich Antibiotikum nehmen?
+- Sind antibiotika wirksam
+- Wieso können wir keine Antibiotika gegen das Virus einnehemen
+- Können wir das Virus nicht mit antibiotika behandeln
+- Wieso sind antibiotika nicht wirksam
+- Können Antibiotika gegen Corona helfen
+- Kann man Covid19 mit Antibiotia behandeln
+
+ 
+## intent:vaccine
+- Kann man sich gegen COVID-19 impfen lassen?
+- Gibt es eine Impfung?
+- Gibt es Impfstoff oder Medikamenten?
+- Gibt es einen Impfstoff
+- Wann wird der impfstoff bereit sein
+- Impfstoff
+- Impfung
+- Impfung gegen Coronavirus
+- Warum gibt es noch kienen Impfstoff
+- Gibt es bald einen Impfstoff 
+- Impfstoff für Corona
+
