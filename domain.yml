@@ -1,17 +1,18 @@
 intents:
   - what_is
   - virus_origin
-  - difference_flu_covid
-  - covid_sars_mers
+  - difference
 
 actions:
   - action_what_is
+  - action_difference
 
 slots:
   topic:
     type: text
 
-
+entities:
+   - topic
 
 responses:
   utter_default:
