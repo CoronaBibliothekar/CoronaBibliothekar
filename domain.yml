@@ -2,10 +2,15 @@ intents:
   - what_is
   - virus_origin
   - difference
+  - prpability_infection
+  - antibiotics
+  - vaccine
+  - current_infected
 
 actions:
   - action_what_is
   - action_difference
+  - action_current_infected
 
 slots:
   topic:

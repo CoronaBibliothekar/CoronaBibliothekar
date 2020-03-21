@@ -31,4 +31,8 @@
     - action_difference
 * what_is{"topic": "covid"}
     - action_what_is
-    
+
+
+## currently infected
+* current_infected
+    - action_current_infected

@@ -99,3 +99,15 @@
 - Gibt es bald einen Impfstoff 
 - Impfstoff für Corona
 
+## intent:current_infected
+- Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
+- Wie viele bestätigte Corona-Virus Fälle gibt es in Deutschland zur Zeit?
+- Wie viele bestätigte Covid-19 Fälle gibt es in Deutschland zu Zeit?
+- Anzahl Corona-Virus Fälle Deutschland
+- Anzahl Covid-19 Fälle Deutschland
+- Wie schnell breitet sich das Corona-Virus in Deutschland aus?
+- Wieviele sind Infiziert
+- Wieviele Menschen sind infiziert
+- Wie hoch sind die Infektionszahlen
+- Infektionszahlen
+- Wie viele Infiziert
