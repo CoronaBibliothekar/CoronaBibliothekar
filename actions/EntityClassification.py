@@ -31,7 +31,7 @@ class ActionWhatIs(Action):
         return []
 
 
-class ActionWhatIs(Action):
+class ActionDifference(Action):
     def name(self) -> Text:
         return "action_difference"
 

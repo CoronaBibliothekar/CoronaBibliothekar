@@ -37,7 +37,7 @@ class ActionCurrentInfected(Action):
         return []
 
 
-class ActionCurrentInfected(Action):
+class ActionCurrentDeaths(Action):
     def name(self) -> Text:
         return "action_current_deaths"
 
@@ -59,7 +59,7 @@ class ActionCurrentInfected(Action):
         return []
 
 
-class ActionCurrentInfected(Action):
+class ActionCurrentBundeslaender(Action):
     def name(self) -> Text:
         return "action_current_bundeslaender"
 
