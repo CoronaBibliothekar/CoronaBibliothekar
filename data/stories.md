@@ -40,11 +40,11 @@
 <<<<<<< HEAD
 ## greet
 * greet
-    - action_greet
+    - utter_greet
     
 ## goodbye
 * bye
-    - action_bye
+    - utter_bye
 =======
 
 ## currently dead

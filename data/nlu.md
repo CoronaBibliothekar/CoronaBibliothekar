@@ -5,9 +5,9 @@
 - guten tag
 
 ## intent:goodbye
-- tschuess
+- tschüss
 - auf wiedersehen!
-- bis spaeter
+- bis später
 
 ## intent:what_is
 - Was ist das [Coronavirus](topic) 

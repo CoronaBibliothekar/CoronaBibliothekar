@@ -19,8 +19,8 @@ actions:
   - action_difference
   - action_current_infected
 <<<<<<< HEAD
-  - action_greet
-  - action_bye
+  - utter_greet
+  - utter_bye
 =======
   - action_current_deaths
   - action_current_bundeslaender
