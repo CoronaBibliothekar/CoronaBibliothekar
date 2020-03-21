@@ -124,3 +124,17 @@
 - Kannst du sagen wieviele bereits gestorben sind
 - Kannst du sagen wieviele bereits an Corona gestorben sind
 - Wieviele sind gestorben
+
+
+## intent:current_bundeslaender
+- Welche Bundesländer sind besonders stark von dem Corona-Virus betroffen?
+- Welche Bundesländer sind besonders stark von Covid19 betroffen?
+- Wo ist es am schlimmsten in Deutschland?
+- Anzahl Fälle Bundesländer
+- Welche Bundesländer sind am schwersten getroffen
+- In welchen Bundesländern ist es am schlimmsten
+- In welchem Bundeland sind die meisten Infizierten
+- In welchen Bundesländern sind die meisten personen infiziert
+- Welche Bundesländer haben die meisten infizierten
+- Bundeslaender infizierte
+

@@ -7,12 +7,14 @@ intents:
   - vaccine
   - current_infected
   - current_deaths
+  - current_bundeslaender
 
 actions:
   - action_what_is
   - action_difference
   - action_current_infected
   - action_current_deaths
+  - action_current_bundeslaender
 
 slots:
   topic:

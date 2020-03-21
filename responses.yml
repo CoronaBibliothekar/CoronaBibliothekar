@@ -4,3 +4,6 @@ difference_flu: Die Forschung ist noch in der Entwicklung. Es gibt jedoch erste 
 difference_sars_mers: Das Virus, das COVID-19 verursacht, und das Virus, das das Schwere Akute Atemwegssyndrom (SARS) oder das Atemwegssyndrom des Nahen Ostens (MERS) verursacht, sind genetisch miteinander verwandt, aber sie sind unterschiedlich. SARS und MERS sind beide tödlicher, aber viel weniger infektiös als COVID-19.
 current_infected_fallback: Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei 16.662 Fällen (stand 21.03.2020).
 current_dead_fallback: Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei 46 Fällen (stand 21.03.2020).
+current_bundeslaender_fallback: Laut RKI sind aktuell Baden-Württemberg (3.668 Infektionen), Nordrhein-Westfalen (3.542 Infektionen) und Bayern (2.960 Infektionen) am stärksten betroffen (stand 21.03.2020).
+
+
