@@ -6,11 +6,15 @@ intents:
   - antibiotics
   - vaccine
   - current_infected
+  - greet
+  - goodbye
 
 actions:
   - action_what_is
   - action_difference
   - action_current_infected
+  - action_greet
+  - action_bye
 
 slots:
   topic:
@@ -23,24 +27,12 @@ responses:
   utter_default:
   - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten"
 
-  utter_greet:
-  - text: "Hey! How are you?"
+  action_greet:
+  - text: "Hallo!"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  action_bye:
+  - text: "Auf Wiedersehen !"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60

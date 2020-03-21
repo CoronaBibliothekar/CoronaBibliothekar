@@ -36,3 +36,11 @@
 ## currently infected
 * current_infected
     - action_current_infected
+    
+## greet
+* greet
+    - action_greet
+    
+## goodbye
+* bye
+    - action_bye
