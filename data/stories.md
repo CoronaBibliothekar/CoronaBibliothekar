@@ -36,3 +36,8 @@
 ## currently infected
 * current_infected
     - action_current_infected
+    
+
+## currently dead
+* current_deaths
+    - action_current_deaths

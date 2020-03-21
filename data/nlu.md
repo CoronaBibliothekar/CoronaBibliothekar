@@ -111,3 +111,16 @@
 - Wie hoch sind die Infektionszahlen
 - Infektionszahlen
 - Wie viele Infiziert
+
+## intent:current_deaths
+- Wie viele Todesfälle gibt es aufgrund des Corona-Viruses in Deutschland zur Zeit?
+- Wie viele Todesfälle gibt es auf Grund des Corona-Viruses in Deutschland zur Zeit?
+- Wie viele Tote gibt es bis jetzt in Deutschland?
+- Anzahl Tode Deutschland
+- Wieviele Tote
+- Wieviele Tote gibt es bereits
+- Todeszahlen
+- Anzahl der Toten
+- Kannst du sagen wieviele bereits gestorben sind
+- Kannst du sagen wieviele bereits an Corona gestorben sind
+- Wieviele sind gestorben

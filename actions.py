@@ -76,3 +76,25 @@ class ActionCurrentInfected(Action):
             print("Aktuelle Fallzahl konnte nicht geladen werden")
 
         return []
+
+
+class ActionCurrentInfected(Action):
+    def name(self) -> Text:
+        return "action_current_deaths"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
+        try:
+            r = requests.get(url)
+            soup = BeautifulSoup(r.content, 'html.parser')
+
+            tds = soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})
+            current_dead = (tds[-1].get_text())
+            dispatcher.utter_message(
+                text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}".format(
+                    current_dead))
+        except:
+            dispatcher.utter_message(text=responses.get("current_dead_fallback"))
+            print("Aktuelle Fallzahl konnte nicht geladen werden")
+
+        return []

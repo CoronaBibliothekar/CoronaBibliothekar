@@ -6,11 +6,13 @@ intents:
   - antibiotics
   - vaccine
   - current_infected
+  - current_deaths
 
 actions:
   - action_what_is
   - action_difference
   - action_current_infected
+  - action_current_deaths
 
 slots:
   topic:
