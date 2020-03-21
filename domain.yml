@@ -6,15 +6,25 @@ intents:
   - antibiotics
   - vaccine
   - current_infected
+<<<<<<< HEAD
   - greet
   - goodbye
+=======
+  - current_deaths
+  - current_bundeslaender
+>>>>>>> 400bf3254e1ad601053ac0a8daac043074835c58
 
 actions:
   - action_what_is
   - action_difference
   - action_current_infected
+<<<<<<< HEAD
   - action_greet
   - action_bye
+=======
+  - action_current_deaths
+  - action_current_bundeslaender
+>>>>>>> 400bf3254e1ad601053ac0a8daac043074835c58
 
 slots:
   topic:

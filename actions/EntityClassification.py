@@ -1,8 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
 import yaml
 
@@ -12,8 +7,6 @@ with open("responses.yml", 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-from bs4 import BeautifulSoup
-import requests
 from typing import Any, Text, Dict, List
 from Levenshtein import distance
 from rasa_sdk import Action, Tracker
@@ -52,27 +45,5 @@ class ActionWhatIs(Action):
             dispatcher.utter_message(text=responses.get("difference_flu"))
         else:
             dispatcher.utter_message(text=responses.get("difference_sars_mers"))
-
-        return []
-
-
-class ActionCurrentInfected(Action):
-    def name(self) -> Text:
-        return "action_current_infected"
-
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
-        try:
-            r = requests.get(url)
-            soup = BeautifulSoup(r.content, 'html.parser')
-
-            tds = soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})
-            current_infected = (tds[-4].get_text())
-            dispatcher.utter_message(
-                text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}".format(
-                    current_infected))
-        except:
-            dispatcher.utter_message(text=responses.get("current_infected_fallback"))
-            print("Aktuelle Fallzahl konnte nicht geladen werden")
 
         return []
