@@ -1,11 +1,9 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - what_is_coronavirus
+  - what_is_covid
+  - virus_origin
+  - difference_flu_covid
+  - covid_sars_mers
 
 responses:
   utter_greet:
