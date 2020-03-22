@@ -71,10 +71,10 @@ responses:
 
 
   utter_infection_behavior: 
-    - text: "Menschen können COVID-19 von anderen Personen bekommen, die von dem Virus befallen sind. Die Krankheit kann sich von Person zu Person durch kleine Tröpfchen aus"
+    - text: "Menschen können COVID-19 von anderen Personen bekommen, die von dem Virus befallen sind. Die Krankheit kann sich von Person zu Person durch kleine Tröpfchen aus Nase oder Mund übertragen, wenn eine Person mit COVID-19 hustet oder ausatmet. Diese Tröpfchen landen auf Gegenständen und Oberflächen um die Person herum. Andere Menschen können sich dann mit COVID-19anstecken, indem sie diese Objekte oder Oberflächen berühren und dann ihre Augen, Nase oder ihren Mund berühren. Menschen können sich auch mit COVID-19 anstecken, wenn sie Tröpfchen von einer Person mit COVID-19 einatmen, die Tröpfchen aushustet oder ausatmet. Aus diesem Grund ist es wichtig, mehr als 1 Meter von einer kranken Person entfernt zu sein."
 
   utter_why_quarantine:
-    - text: "Eine weitere Ausbreitung des neuartigen Coronavirus in Deutschland soll so weit wie möglich verlangsamt werden. Hierfür ist es notwendig, die Kontaktpersonen von labordiagnostisch bestätigten Infektionsfällen zu identifizieren und – je nach individuellem Infektionsrisiko – ihren"
+    - text: "Eine weitere Ausbreitung des neuartigen Coronavirus in Deutschland soll so weit wie möglich verlangsamt werden. Hierfür ist es notwendig, die Kontaktpersonen von labordiagnostisch bestätigten Infektionsfällen zu identifizieren und – je nach individuellem Infektionsrisiko – ihren Gesundheitszustand für die maximale Dauer der Inkubationszeit (14 Tage) zu beobachten, wenn geboten auch in häuslicher Quarantäne. Das RKI gibt Empfehlungen zum Management von Kontaktpersonen, die durch das zuständige Gesundheitsamt unter Berücksichtigung der angestrebten Schutzziele an die Situation vor Ort angepasst werden können."
 
   utter_corona_test:
     - text: "Nur bestimmte Labore sind für die Durchführung von Tests für COVID-19 qualifiziert. Solche Labors sind Ihrer Gesundheitsbehörde oder Ihrem Gesundheitsdienstleister
