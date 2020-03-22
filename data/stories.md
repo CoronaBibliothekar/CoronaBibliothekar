@@ -59,6 +59,10 @@
 * prpability_infection
     - utter_prpability_infection
     
+## infection behavior
+* infection_behavior
+    - utter_infection_behavior
+    
 ## antibiotics
 * antibiotics
     - utter_antibiotics
@@ -73,6 +77,14 @@
 * antibiotics
     - utter_antibiotics    
 
+## quarantine
+* why_quarantine
+    - utter_why_quarantine
+    
+## test
+* corona_test
+    - utter_corona_test
+    
 ## mix
 * greet
     - utter_greet

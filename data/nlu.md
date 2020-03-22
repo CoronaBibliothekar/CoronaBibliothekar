@@ -84,8 +84,8 @@
 - Weißt du ob es unterschiede zu [Sars](topic) gibt
 
 
-##intent:prpability_infection
-- Was ist die Wahrscheinlichkeit dass man COVID -19 kriegt?
+## intent:prpability_infection
+- Was ist die Wahrscheinlichkeit dass man COVID-19 kriegt?
 - Wie warscheinlich ist es, dass ich COVID-19 kriege
 - Wahrscheinlichkiet dass ich das bekomme
 - Risiko für mich
@@ -95,6 +95,12 @@
 - Chance Infektion
 - Mit welcher Wahrscheinlichkeit werde ich mich infizieren.
 
+## intent:infection_behavior
+- Wie gefährlich ist Corona?
+- Wie verläuft die COVID-19 Erkrankung?
+- Wie verläuft Corona?
+- Was für Symptome hat Corona?
+- Was passiert wenn jemand Covid-19 hat?
 
 ## intent:antibiotics
 - Sind Antibiotika wirksam bei der Vorbeugung oder Behandlung des COVID-19?
@@ -120,6 +126,20 @@
 - Warum gibt es noch kienen Impfstoff
 - Gibt es bald einen Impfstoff 
 - Impfstoff für Corona
+
+## intent: why_quarantine
+- Warum muss ich in Quarantäne? 
+- Wann muss ich in Quarantäne? 
+- Wie lange muss ich in Quarantäne?
+- Länge der Quarantäne
+- Dauer der Quarantäne
+
+## intent: corona_test
+- Welche Tests gibt es? 
+- Gibt es Tests? 
+- Wie kann ich mich testen lassen?
+- Ablauf von Testverfahren 
+- Wie werden Tests durchgeführt?
 
 ## intent:current_infected
 - Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
