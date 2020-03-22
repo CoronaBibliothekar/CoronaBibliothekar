@@ -274,3 +274,16 @@
     - utter_symptoms
 * what_if_symptoms
     - utter_what_if_symptoms
+    
+# should test
+* should_test
+    - utter_should_test
+    
+    
+# symptoms + what if + should test
+* symptoms
+    - utter_symptoms
+* what_if_symptoms
+    - utter_what_if_symptoms
+* should_test
+    - utter_should_test

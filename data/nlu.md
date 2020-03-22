@@ -290,3 +290,14 @@
 - was tun wenn man sich angesteckt hat
 - Verhalten wenn Corona eingefangen
 - Kann ich zum Arzt gehn?
+
+## intent:should_test
+- Sollte ich mich testen lassen?
+- Wann muss ich mich testen lassen?
+- Wann muss ich zum Test?
+- Muss ich mich testen lassen?
+- Wann sollte ich mich testen lassen?
+- Unter welchen Umständen sollte ich mich testen lassen
+- Wann sollte ich einen Test auf Coronaviren machen
+- Sollte ich mich auf Covid19 testen lassen
+- Brauche ich einen test auf das Coronavirus

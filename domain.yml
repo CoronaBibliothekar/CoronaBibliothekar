@@ -20,11 +20,13 @@ actions:
 - utter_why_quarantine
 - utter_symptoms
 - utter_what_if_symptoms
+- utter_should_test
 entities:
 - location
 - topic
 - metric
 intents:
+- should_test
 - what_if_symptoms
 - mortality
 - protection
@@ -47,6 +49,12 @@ intents:
 - treatment
 - symptoms
 responses:
+  utter_should_test:
+    - text: Wenn sie Fieber, Husten und Atembeschwerden entwickeln und sich in einem betroffenen Gebiet aufgehalten haben oder
+        wenn Sie Kontakt mit jemandem mit bestätigtem COVID-19 gehabt haben wenden Sie sich an Ihre Gesundheitsbehörde oder Ihren Gesundheitsdienstleister. Sie werden die besten Informationen für Sie haben. Gehen Sie nicht in eine Arztpraxis oder ein Krankenhaus, ohne vorher anzurufen.
+
+        Verschiedene Gesundheitsbehörden werden unterschiedliche Richtlinien dafür haben, wer sich testen lassen sollte, und diese werden sich ändern, wenn sich unser Verständnis des Virus verbessert. Sie können zum Beispiel die ECDC-Richtlinien hier, die CDC-Richtlinien hier und das Flussdiagramm des Robert-Koch-Instituts hier sehen.
+
   utter_what_if_symptoms:
     - text: Ab 2020/03/06 müssen Sie sich, wenn Sie sich in einem Hochrisikogebiet aufgehalten haben oder Kontakt mit jemandem hatten, der eine bestätigte COVID-19 hat, isolieren und in einem Haus bleiben. Bleiben Sie zu Hause, außer zur Pflege, vermeiden Sie den Kontakt mit anderen, tragen Sie eine Gesichtsmaske, wenn Sie sich in der Nähe anderer aufhalten müssen, decken Sie Ihren Husten und Niesen ab, reinigen Sie Ihre Hände häufig und vermeiden Sie die gemeinsame Nutzung persönlicher Gegenstände.
 
