@@ -99,7 +99,9 @@
 * treatment
     - utter_treatment
     
-## tab_water
+## tab_water 2
+* tab_water
+    - utter_tab_water
 * tab_water
     - utter_tab_water
     
@@ -136,3 +138,129 @@
     - utter_antibiotics
 * virus_origin
     - utter_virus_origin
+
+
+## infection_behavior
+* infection_behavior
+    - utter_infection_behavior
+    
+## why_quarantine
+* why_quarantine
+    - utter_why_quarantine
+    
+## corona_test
+* corona_test
+    - utter_corona_test
+    
+## affected_ages
+* affected_ages
+    - utter_affected_ages
+    
+## mortality
+* mortality
+    - utter_mortality
+    
+## treatment
+* treatment
+    - utter_treatment
+    
+## tab_water
+* tab_water
+    - utter_tab_water
+    
+## protection
+* protection
+    - utter_protection
+    
+## protection protection ...
+* protection
+    - utter_protection
+* protection
+    - utter_protection
+* protection
+    - utter_protection
+* protection
+    - utter_protection
+    
+## mix 1
+* infection_behavior
+    - utter_infection_behavior
+* treatment
+    - utter_treatment
+* affected_ages
+    - utter_affected_ages
+
+## mix 2
+* protection
+    - utter_protection
+* corona_test
+    - utter_corona_test
+* why_quarantine
+    - utter_why_quarantine
+    
+## mix 3
+* mortality
+    - utter_mortality
+* protection
+    - utter_protection
+* treatment
+    - utter_treatment
+* corona_test
+    - utter_corona_test
+* why_quarantine
+    - utter_why_quarantine
+    
+## mix 4
+* vaccine
+    - utter_vaccine
+* antibiotics
+    - utter_antibiotics
+* corona_test
+    - utter_corona_test
+* virus_origin
+    - utter_virus_origin
+* infection_behavior
+    - utter_infection_behavior
+* what_is{"topic": "corona"}
+    - action_what_is
+
+## interactive_story_1
+* protection
+    - utter_protection
+* protection
+    - utter_protection
+* quarantine
+    - utter_why_quarantine
+* tab_water
+    - utter_tab_water
+
+## interactive_story_1
+* protection
+    - utter_protection
+
+## interactive_story_1
+* affected_ages
+    - utter_affected_ages
+* antibiotics
+    - utter_antibiotics
+* corona_test
+    - utter_corona_test
+* infection_behavior
+    - utter_infection_behavior
+* mortality
+    - utter_mortality
+* protection
+    - utter_protection
+* prpability_infection
+    - utter_prpability_infection
+* tab_water
+    - utter_tab_water
+* virus_origin
+    - utter_virus_origin
+* quarantine
+    - utter_why_quarantine
+
+
+## symptoms
+* symptoms
+    - utter_symptoms

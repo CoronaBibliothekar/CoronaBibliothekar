@@ -18,10 +18,8 @@
 - Mach's gut
 - Man sieht sich
 
-
-
 ## intent:what_is
-- Was ist das [Coronavirus](topic) 
+- Was ist das [Coronavirus](topic)
 - Was hat es mit dem [Coronavirus](topic) auf sich
 - [Coronavirus](topic)
 - [Coronaviren](topic)
@@ -48,7 +46,7 @@
 - Woher kommt das Virus
 - Wie ist das Virus entstanden
 - Wie ist Das Coronavirus entstanden
-- Woher kommt Covid19 
+- Woher kommt Covid19
 - Was ist der Ursprung des Corona Virus
 - Woher kommt es
 - Wie ist die geschichte hinter dem Coronavirus
@@ -83,7 +81,6 @@
 - Kannst du mir sagen inwiefern sich [Mers](topic) und Corona unterscheiden
 - Weißt du ob es unterschiede zu [Sars](topic) gibt
 
-
 ## intent:prpability_infection
 - Was ist die Wahrscheinlichkeit dass man COVID-19 kriegt?
 - Wie warscheinlich ist es, dass ich COVID-19 kriege
@@ -94,17 +91,29 @@
 - Wahrscheinlichkeit infektion
 - Chance Infektion
 - Mit welcher Wahrscheinlichkeit werde ich mich infizieren.
+- Wie wahrscheinlich ist es das ich mich mit covid19 infiziere?
 
-## intent:infection_behavior
-- Wie gefährlich ist Corona?
+## intent:symptoms
+- Krankheitsverlauf
+- Wie sieht der Krankheitsverlauf aus
+- Wie verläuft die Krankheit
+- Krankheitsverlauf Corona
 - Wie verläuft die COVID-19 Erkrankung?
 - Wie verläuft Corona?
 - Was für Symptome hat Corona?
 - Was passiert wenn jemand Covid-19 hat?
+- Wie verläuft eine erkrankung mit Corona?
+- Welche Symptome treten auf
+- Mit welchen Symptomen muss man rechnen
+- Welche Symptome hat werden vom Virus erzeugt
+- Welche Symptome
+- Symptome einer Infektion
+- Welche Symptome können auftreten
+- Mit welchen Symptomen ist zu rechnen
 
 ## intent:antibiotics
 - Sind Antibiotika wirksam bei der Vorbeugung oder Behandlung des COVID-19?
-- Helfen Antibiotika dagegen? 
+- Helfen Antibiotika dagegen?
 - Kann ich Antibiotikum nehmen?
 - Sind antibiotika wirksam
 - Wieso können wir keine Antibiotika gegen das Virus einnehemen
@@ -112,8 +121,8 @@
 - Wieso sind antibiotika nicht wirksam
 - Können Antibiotika gegen Corona helfen
 - Kann man Covid19 mit Antibiotia behandeln
+- Können Antibiotika nicht helfen?
 
- 
 ## intent:vaccine
 - Kann man sich gegen COVID-19 impfen lassen?
 - Gibt es eine Impfung?
@@ -124,39 +133,44 @@
 - Impfung
 - Impfung gegen Coronavirus
 - Warum gibt es noch kienen Impfstoff
-- Gibt es bald einen Impfstoff 
+- Gibt es bald einen Impfstoff
 - Impfstoff für Corona
 
-## intent: quarantine
-- Warum muss ich in Quarantäne? 
-- Wann muss ich in Quarantäne? 
+## intent:quarantine
+- Warum muss ich in Quarantäne?
+- Wann muss ich in Quarantäne?
 - Wie lange muss ich in Quarantäne?
 - Länge der Quarantäne
 - Dauer der Quarantäne
+- Wieso muss man in Quaratäne
+- Wieso muss ich in quarantäne?
 
-## intent: test
-- Welche Tests gibt es? 
-- Gibt es Tests? 
+## intent:corona_test
+- Welche Tests gibt es?
+- Gibt es Tests?
 - Wie kann ich mich testen lassen?
-- Ablauf von Testverfahren 
+- Ablauf von Testverfahren
 - Wie werden Tests durchgeführt?
+- Wie wird getestet?
 
-## intent: mortality
-- Wie ist die Sterblichkeitsrate? 
+## intent:mortality
+- Wie ist die Sterblichkeitsrate?
 - Wieviele Leute sterben?
 - Wie hoch ist die Mortaliät
 - Sterblichkeit
 - Sterblichkeitsrate
 - Wie hoch ist die Sterblichkeitsrate
+- Wie hoch ist die sterblichkeit
 
-## intent: age
+## intent:affected_ages
 - Welche Altersgruppen sind von der Corona- Virus Infektion am stärksten betroffen?
 - Wer kann sich micht Corona-Virus anstecken?
 - Können sich nur ältere Menschen mit dem Corona-Virus anstecken?
 - Ab welchem Alter gehört man zur Risikogruppe?
 - Risiko für ältere
+- Welche altersgruppen sind am schlimmsten betroffen?
 
-## intent: treatment
+## intent:treatment
 - Welche Behandlungsmöglichkeiten gibt es gegen den Corona-Virus?
 - Welche Medikamente wirken gegen das Corona-Virus?
 - Kann ich mich gegen das Corona-Virus durch Medikamente schützen? Medikamente?
@@ -194,7 +208,6 @@
 - Kannst du sagen wieviele bereits an Corona gestorben sind
 - Wieviele sind gestorben
 
-
 ## intent:current_bundeslaender
 - Welche Bundesländer sind besonders stark von dem Corona-Virus betroffen?
 - Welche Bundesländer sind besonders stark von Covid19 betroffen?
@@ -207,7 +220,7 @@
 - Welche Bundesländer haben die meisten infizierten
 - Bundeslaender infizierte
 
-## intent: tab_water
+## intent:tab_water
 - Kann ich weiterhin Leitungswasser trinken?
 - Kann der Virus durch das Leitungswasser übertragen werden?
 - Kann das Virus durch Wasser in den Leitungen übertragen werden?
@@ -217,9 +230,11 @@
 - kann man wasser aus dem Wasserhan trinken
 - Ist das wasser aus dem wasserhan sicher
 - kann ich asu dem Wasserhahn trinken
+- Kann ich mich von leitungswasser infizieren?
+- Kann ich leitungswasser trinken?
 
-
-# intent:protection
+## intent:protection
+- Wie kann ich mich vor dem Coronavirus schützen
 - was kann ich tun um mich zu schützen?
 - Wie kann ich mich schützen
 - wie kann ich andere schützen
@@ -235,3 +250,17 @@
 - infektionen vorbeugen
 - welches verhalten ist empfohlen
 - welches verhalten ist empfohlen um sich zu schützen
+- Wie kann ich mich gut schützen?
+
+
+## infection_behavior
+- Wie verbreitet sich das Corona Virus
+- Wie kann sich das Virus ausbreiten
+- Wie wird man infiziert?
+- Wie läuft eine infektion ab
+- Wie fängt man sich das Virus ein
+- Wie holt man sich Corona
+- Wie geschieht eine ansteckung
+- Wie kann es passieren das man sich mit Covid19 infiziert
+- Prozess der Ansteckung
+- Wie steckt man sich an
