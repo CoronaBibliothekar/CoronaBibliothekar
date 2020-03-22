@@ -96,6 +96,7 @@
 - Mit welcher Wahrscheinlichkeit werde ich mich infizieren.
 
 ## intent:infection_behavior
+- Wie gefährlich ist Corona?
 - Wie verläuft die COVID-19 Erkrankung?
 - Wie verläuft Corona?
 - Was für Symptome hat Corona?
@@ -125,6 +126,13 @@
 - Warum gibt es noch kienen Impfstoff
 - Gibt es bald einen Impfstoff 
 - Impfstoff für Corona
+
+## intent: quarantine
+- Warum muss ich in Quarantäne? 
+- Wann muss ich in Quarantäne? 
+- Wie lange muss ich in Quarantäne?
+- Länge der Quarantäne
+- Dauer der Quarantäne
 
 ## intent:current_infected
 - Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
