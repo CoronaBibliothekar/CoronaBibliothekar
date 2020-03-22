@@ -21,6 +21,7 @@ actions:
 - utter_why_quarantine
 - utter_symptoms
 entities:
+- location
 - topic
 intents:
 - mortality
@@ -182,4 +183,6 @@ session_config:
   session_expiration_time: 60
 slots:
   topic:
+    type: text
+  location:
     type: text

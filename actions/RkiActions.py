@@ -12,6 +12,12 @@ import requests
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from Levenshtein import distance
+
+
+bundeslaender = ["Baden-Württemberg", "Bayern", "Berlin", "Brandenburg", "Bremen", "Hamburg", "Hessen",
+                 "Mecklenburg-Vorpommern", "Niedersachsen", "Nordrhein-Westfalen", "Rheinland-Pfalz",
+                 "Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein", "Thüringen"]
 
 # gibt die tabelle des rki zurück, als liste in der alle zeilen aneinandergehängt sind.
 def getcurrent_nubers() -> List[str]:
@@ -28,11 +34,26 @@ class ActionCurrentInfected(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         try:
-            current_infected = getcurrent_nubers()[-4]
+            current_infected = getcurrent_nubers()
 
-            dispatcher.utter_message(
-                text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
-                    current_infected))
+            location = tracker.get_slot("location")
+            if location is None:
+                location = ""
+            distance_germany = min([distance(location, x) for x in ["Deutschland", "", "Bundesweit"]])
+            distance_corona_bundesland = min([distance(location, x) for x in bundeslaender])
+            if (distance_germany < distance_corona_bundesland):
+                dispatcher.utter_message(
+                    text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
+                        current_infected[-4]))
+            else:
+                distance_bundeslaender = [distance(location, x) for x in bundeslaender]
+                bundesland = list(sorted(zip(distance_bundeslaender, bundeslaender)))[0][1]
+                infected_in_bundesland = current_infected[bundeslaender.index(bundesland)*4]
+                dispatcher.utter_message(
+                    text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in {} aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
+                        bundesland, infected_in_bundesland))
+
+
         except Exception as e:
             dispatcher.utter_message(text=responses.get("current_infected_fallback"))
             print("Aktuelle Fallzahl konnte nicht geladen werden")
@@ -66,15 +87,14 @@ class ActionCurrentBundeslaender(Action):
         Dict[Text, Any]]:
         url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
         try:
-            bundeslaender = ["Baden-Württemberg", "Bayern", "Berlin", "Brandenburg", "Bremen", "Hamburg", "Hessen",
-                             "Mecklenburg-Vorpommern", "Niedersachsen", "Nordrhein-Westfalen", "Rheinland-Pfalz",
-                             "Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein", "Thüringen"]
             aktuelle_zahlen = getcurrent_nubers()
             infected = []
             for i in range(len(bundeslaender)):
                 infected.append(int(aktuelle_zahlen[4*i].replace(".", "")))
 
             sorted_bundeslaender = list(reversed(sorted(zip(infected, bundeslaender))))
+
+            tracker.get_latest_entity_values()
 
             dispatcher.utter_message(text="Laut RKI sind sind aktuell {}({} Infektionen), {}({} Infektionen) und {}({} Infektionen) am schlimmsten Betroffen  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
                 sorted_bundeslaender[0][1],

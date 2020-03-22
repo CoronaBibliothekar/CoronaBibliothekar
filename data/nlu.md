@@ -183,17 +183,34 @@
 - Gibt es ein Medikament gegen Corona
 
 ## intent:current_infected
-- Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
-- Wie viele bestätigte Corona-Virus Fälle gibt es in Deutschland zur Zeit?
-- Wie viele bestätigte Covid-19 Fälle gibt es in Deutschland zu Zeit?
-- Anzahl Corona-Virus Fälle Deutschland
-- Anzahl Covid-19 Fälle Deutschland
-- Wie schnell breitet sich das Corona-Virus in Deutschland aus?
+- Wie viele bestätigte Corona-Virus Infektionen gibt es in [Deutschland](location) zur Zeit?
+- Wie viele bestätigte Corona-Virus Fälle gibt es in [Deutschland](location) zur Zeit?
+- Wie viele bestätigte Covid-19 Fälle gibt es in [Hessen](location) zu Zeit?
+- Wie viele bestätigte Covid-19 Fälle gibt es [Bundesweit](location) zu Zeit?
+- Anzahl Corona-Virus Fälle [Baden-Württemberg](location)
+- Anzahl Corona-Virus Fälle [Baden Württemberg](location)
+- Anzahl Covid-19 Fälle [Bayern](location)
+- Wie schnell breitet sich das Corona-Virus in [Berlin](location) aus?
 - Wieviele sind Infiziert
+- Wieviele sind Infiziert in [Mecklenburg-Vorpommern](location)
+- Wieviele sind Infiziert in [Mecklenburg Vorpommern](location)
 - Wieviele Menschen sind infiziert
+- Wieviele Menschen sind infiziert in [Niedersachsen](location)
 - Wie hoch sind die Infektionszahlen
+- Wie hoch sind die Infektionszahlen in [Brandenburg](location)
 - Infektionszahlen
+- Wie hoch sind die Infektionszahlen[Bremen](location)
+- Infektionszahlen [Nordrhein-Westfalen](location)
+- Infektionszahlen [Nordrhein Westfalen](location)
+- Infektionszahlen [Rheinland-Pfalz](location)
+- Wieviele Menschen sind infiziert [Saarland](location)
+- Infektionszahlen [Sachsen](location)
+- Anzahl Covid-19 Fälle [Sachsen-Anhalt](location)
+- Infektionszahlen [Schleswig-Holstein](location)
 - Wie viele Infiziert
+- Wie viele Infiziert [Hamburg](location)
+- Wie viele Infiziert [Thüringen](location)
+
 
 ## intent:current_deaths
 - Wie viele Todesfälle gibt es aufgrund des Corona-Viruses in Deutschland zur Zeit?
