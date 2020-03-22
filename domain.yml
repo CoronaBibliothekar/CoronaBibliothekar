@@ -12,6 +12,7 @@ intents:
   - current_bundeslaender
   - infection_behavior
   - why_quarantine
+  - corona_test
 
 actions:
   - action_what_is
@@ -27,6 +28,7 @@ actions:
   - utter_vaccine
   - utter_infection_behavior
   - utter_why_quarantine
+  - utter_corona_test
 
 slots:
   topic:
@@ -76,8 +78,8 @@ responses:
 
   utter_corona_test:
     - text: "Nur bestimmte Labore sind für die Durchführung von Tests für COVID-19 qualifiziert. Solche Labors sind Ihrer Gesundheitsbehörde oder Ihrem Gesundheitsdienstleister
-bekannt, so dass Sie möglicherweise angewiesen werden, ein spezielles Labor aufzusuchen, wenn dieser Test erforderlich ist. Labortests können Abstrichproben, Sputumtests, Bluttests
-oder Nasen- oder Luftröhrenabstriche (Entnahme einer Probe aus dem Inneren Ihrer Nase oder Ihrer Atemwege) umfassen."
+            bekannt, so dass Sie möglicherweise angewiesen werden, ein spezielles Labor aufzusuchen, wenn dieser Test erforderlich ist. Labortests können Abstrichproben, Sputumtests, Bluttests
+            oder Nasen- oder Luftröhrenabstriche (Entnahme einer Probe aus dem Inneren Ihrer Nase oder Ihrer Atemwege) umfassen."
 
 session_config:
   session_expiration_time: 60
