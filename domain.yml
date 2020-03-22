@@ -16,6 +16,7 @@ intents:
   - affected_ages
   - mortality
   - treatment
+  - tab_water
   
 actions:
   - action_what_is
@@ -35,6 +36,7 @@ actions:
   - utter_affected_ages
   - utter_mortality
   - utter_treatment
+  - utter_tab_water
 
 slots:
   topic:
@@ -104,6 +106,9 @@ responses:
     utter_treatment:
     - text: "Aktuell gibt es keine bestätigten Medikamente welche eine Ansteckung mit dem Corona-Virus verhindern oder eine Erkrankung mit dem Corona-Virus behandeln (stand 21.03.2020)."
     
+    utter_tab_water:
+    - text: "Aktuell gibt es keine Hinweise darauf dass die Gefahr auf eine Infizierung mit dem Corona-Virus durch das Leitungswasser besteht
+(stand 21.03.2020)."
     
 session_config:
   session_expiration_time: 60
