@@ -1,7 +1,6 @@
 actions:
 - action_current_bundeslaender
-- action_current_deaths
-- action_current_infected
+- action_current_numbers
 - action_difference
 - action_what_is
 - utter_affected_ages
@@ -23,6 +22,7 @@ actions:
 entities:
 - location
 - topic
+- metric
 intents:
 - mortality
 - protection
@@ -37,10 +37,9 @@ intents:
 - what_is
 - difference
 - vaccine
-- current_infected
+- current_numbers
 - greet
 - goodbye
-- current_deaths
 - current_bundeslaender
 - why_quarantine
 - treatment
@@ -185,4 +184,6 @@ slots:
   topic:
     type: text
   location:
+    type: text
+  metric:
     type: text

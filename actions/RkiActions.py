@@ -27,53 +27,51 @@ def getcurrent_nubers() -> List[str]:
     return [x.get_text().replace(".", "") for x in soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})]
 
 
-
-class ActionCurrentInfected(Action):
+class ActionCurrentNumbers(Action):
     def name(self) -> Text:
-        return "action_current_infected"
+        return "action_current_numbers"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         try:
-            current_infected = getcurrent_nubers()
+            current_numbers = getcurrent_nubers()
 
             location = tracker.get_slot("location")
             if location is None:
                 location = ""
+            metric = tracker.get_slot("metric")
+            if metric is None:
+                metric = ""
+            distance_infected = min([distance(location, x) for x in ["", "Infiziert", "Infektionen", "Fälle", "Infektionszahlen"]])
+            distance_deaths = min([distance(location, x) for x in ["Tote", "gestorben", "Todesfälle", "Toten"]])
+
             distance_germany = min([distance(location, x) for x in ["Deutschland", "", "Bundesweit"]])
             distance_corona_bundesland = min([distance(location, x) for x in bundeslaender])
             if (distance_germany < distance_corona_bundesland):
-                dispatcher.utter_message(
-                    text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
-                        current_infected[-4]))
+                if distance_infected < distance_deaths:
+                    dispatcher.utter_message(
+                        text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
+                            current_numbers[-4]))
+                else:
+                    dispatcher.utter_message(
+                        text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
+                            current_numbers[-2]))
             else:
                 distance_bundeslaender = [distance(location, x) for x in bundeslaender]
                 bundesland = list(sorted(zip(distance_bundeslaender, bundeslaender)))[0][1]
-                infected_in_bundesland = current_infected[bundeslaender.index(bundesland)*4]
-                dispatcher.utter_message(
-                    text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in {} aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
-                        bundesland, infected_in_bundesland))
+                if distance_infected < distance_deaths:
+                    infected_in_bundesland = current_numbers[bundeslaender.index(bundesland)*4]
+                    dispatcher.utter_message(
+                        text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in {} aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
+                            bundesland, infected_in_bundesland))
+                else:
+                    deaths_in_bundesland = current_numbers[bundeslaender.index(bundesland) * 4 + 2]
+                    dispatcher.utter_message(
+                        text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in {} aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
+                            bundesland, deaths_in_bundesland))
 
 
         except Exception as e:
-            dispatcher.utter_message(text=responses.get("current_infected_fallback"))
-            print("Aktuelle Fallzahl konnte nicht geladen werden")
-            print(e)
-        return []
-
-
-class ActionCurrentDeaths(Action):
-    def name(self) -> Text:
-        return "action_current_deaths"
-
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
-        try:
-            current_dead = getcurrent_nubers()[-1]
-            dispatcher.utter_message(
-                text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
-                    current_dead))
-        except Exception as e:
-            dispatcher.utter_message(text=responses.get("current_dead_fallback"))
+            dispatcher.utter_message(text=responses.get("Beim laden der aktuellen Zahlen ist was schiefgelaufen. Schau mal bei https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html vorbei, da sind immer die aktuellen Zahlen zu sehen"))
             print("Aktuelle Fallzahl konnte nicht geladen werden")
             print(e)
         return []

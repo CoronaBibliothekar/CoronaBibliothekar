@@ -182,48 +182,45 @@
 - Therapie für infizierte
 - Gibt es ein Medikament gegen Corona
 
-## intent:current_infected
-- Wie viele bestätigte Corona-Virus Infektionen gibt es in [Deutschland](location) zur Zeit?
-- Wie viele bestätigte Corona-Virus Fälle gibt es in [Deutschland](location) zur Zeit?
-- Wie viele bestätigte Covid-19 Fälle gibt es in [Hessen](location) zu Zeit?
-- Wie viele bestätigte Covid-19 Fälle gibt es [Bundesweit](location) zu Zeit?
-- Anzahl Corona-Virus Fälle [Baden-Württemberg](location)
-- Anzahl Corona-Virus Fälle [Baden Württemberg](location)
-- Anzahl Covid-19 Fälle [Bayern](location)
+## intent:current_numbers
+- Wie viele bestätigte Corona-Virus [Infektionen](metric) gibt es in [Deutschland](location) zur Zeit?
+- Wie viele bestätigte Corona-Virus [Fälle](metric) gibt es in [Deutschland](location) zur Zeit?
+- Wie viele bestätigte Covid-19 [Fälle](metric) gibt es in [Hessen](location) zu Zeit?
+- Wie viele bestätigte Covid-19 [Fälle](metric) gibt es [Bundesweit](location) zu Zeit?
+- Anzahl Corona-Virus [Fälle](metric) [Baden-Württemberg](location)
+- Anzahl Corona-Virus [Fälle](metric) [Baden Württemberg](location)
+- Anzahl Covid-19 [Fälle](metric) [Bayern](location)
 - Wie schnell breitet sich das Corona-Virus in [Berlin](location) aus?
-- Wieviele sind Infiziert
-- Wieviele sind Infiziert in [Mecklenburg-Vorpommern](location)
-- Wieviele sind Infiziert in [Mecklenburg Vorpommern](location)
-- Wieviele Menschen sind infiziert
-- Wieviele Menschen sind infiziert in [Niedersachsen](location)
-- Wie hoch sind die Infektionszahlen
-- Wie hoch sind die Infektionszahlen in [Brandenburg](location)
-- Infektionszahlen
-- Wie hoch sind die Infektionszahlen[Bremen](location)
-- Infektionszahlen [Nordrhein-Westfalen](location)
-- Infektionszahlen [Nordrhein Westfalen](location)
-- Infektionszahlen [Rheinland-Pfalz](location)
-- Wieviele Menschen sind infiziert [Saarland](location)
-- Infektionszahlen [Sachsen](location)
-- Anzahl Covid-19 Fälle [Sachsen-Anhalt](location)
-- Infektionszahlen [Schleswig-Holstein](location)
-- Wie viele Infiziert
-- Wie viele Infiziert [Hamburg](location)
-- Wie viele Infiziert [Thüringen](location)
-
-
-## intent:current_deaths
-- Wie viele Todesfälle gibt es aufgrund des Corona-Viruses in Deutschland zur Zeit?
-- Wie viele Todesfälle gibt es auf Grund des Corona-Viruses in Deutschland zur Zeit?
-- Wie viele Tote gibt es bis jetzt in Deutschland?
-- Anzahl Tode Deutschland
-- Wieviele Tote
-- Wieviele Tote gibt es bereits
-- Todeszahlen
-- Anzahl der Toten
-- Kannst du sagen wieviele bereits gestorben sind
-- Kannst du sagen wieviele bereits an Corona gestorben sind
-- Wieviele sind gestorben
+- Wieviele sind [Infiziert](metric)
+- Wieviele sind [Infiziert](metric) in [Mecklenburg-Vorpommern](location)
+- Wieviele sind [Infiziert](metric) in [Mecklenburg Vorpommern](location)
+- Wieviele Menschen sind [infiziert](metric)
+- Wieviele Menschen sind [infiziert](metric) in [Niedersachsen](location)
+- Wie hoch sind die [Infektionszahlen](metric)
+- Wie hoch sind die [Infektionszahlen](metric) in [Brandenburg](location)
+- [Infektionszahlen](metric)
+- Wie hoch sind die [Infektionszahlen](metric) [Bremen](location)
+- [Infektionszahlen](metric) [Nordrhein-Westfalen](location)
+- [Infektionszahlen](metric) [Nordrhein Westfalen](location)
+- [Infektionszahlen](metric) [Rheinland-Pfalz](location)
+- Wieviele Menschen sind [infiziert](metric) [Saarland](location)
+- [Infektionszahlen](metric) [Sachsen](location)
+- Anzahl Covid-19 [Fälle](metric) [Sachsen-Anhalt](location)
+- [Infektionszahlen](metric) [Schleswig-Holstein](location)
+- Wie viele [Infiziert](metric)
+- Wie viele [Infiziert](metric) [Hamburg](location)
+- Wie viele [Infiziert](metric) [Thüringen](location)
+- Wie viele [Todesfälle](metric) gibt es aufgrund des Corona-Viruses in Deutschland zur Zeit?
+- Wie viele [Todesfälle](metric) gibt es auf Grund des Corona-Viruses in Deutschland zur Zeit?
+- Wie viele [Tote](metric) gibt es bis jetzt in Deutschland?
+- Anzahl [Tode](metric) Deutschland
+- Wieviele [Tote](metric)
+- Wieviele [Tote](metric) gibt es bereits
+- [Todeszahlen](metric)
+- Anzahl der [Toten](metric)
+- Kannst du sagen wieviele bereits [gestorben](metric) sind
+- Kannst du sagen wieviele bereits an Corona [gestorben](metric) sind
+- Wieviele sind [gestorben](metric)
 
 ## intent:current_bundeslaender
 - Welche Bundesländer sind besonders stark von dem Corona-Virus betroffen?

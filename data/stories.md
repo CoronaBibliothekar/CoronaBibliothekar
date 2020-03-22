@@ -31,8 +31,8 @@
     - action_what_is
 
 ## currently infected
-* current_infected
-    - action_current_infected
+* current_numbers
+    - action_current_numbers
     
 ## greet
 * greet
@@ -43,8 +43,8 @@
     - utter_bye
 
 ## currently dead
-* current_deaths
-    - action_current_deaths
+* current_numbers
+    - action_current_numbers
     
 ## currenly bundeslaender
 * current_bundeslaender
@@ -108,14 +108,14 @@
 ## mix
 * greet
     - utter_greet
-* current_infected
-    - action_current_infected
-* current_deaths
-    - action_current_deaths
+* current_numbers
+    - action_current_numbers
+* current_numbers
+    - action_current_numbers
 * current_bundeslaender
     - action_current_bundeslaender
-* current_deaths
-    - action_current_deaths
+* current_numbers
+    - action_current_numbers
 * vaccine
     - utter_vaccine
 * antibiotics
@@ -130,8 +130,8 @@
     - utter_bye
     
 ## more conversations 1
-* current_deaths
-    - action_current_deaths
+* current_numbers
+    - action_current_numbers
 * vaccine
     - utter_vaccine
 * antibiotics
