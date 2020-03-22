@@ -180,3 +180,20 @@
 - Welche Bundesländer haben die meisten infizierten
 - Bundeslaender infizierte
 
+
+# intent:protection
+- was kann ich tun um mich zu schützen?
+- Wie kann ich mich schützen
+- wie kann ich andere schützen
+- Kann ich die wahrscheinlichkeit verringern mich anzustecken
+- Was soll ich tun umeine infektion zu vermeiden
+- Wie kann ich mich und andere schützen
+- Wie kann ich eine infektion vermeiden
+- effektiv schützen
+- Schutzmaßnahmen
+- Mich und meine Familie schützen
+- effektive schutzmaßnahmen
+- vermeidung von infektionen
+- infektionen vorbeugen
+- welches verhalten ist empfohlen
+- welches verhalten ist empfohlen um sich zu schützen

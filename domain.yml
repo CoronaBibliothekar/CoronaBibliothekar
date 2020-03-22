@@ -13,6 +13,7 @@ intents:
   - infection_behavior
   - why_quarantine
   - corona_test
+  - protection
 
 actions:
   - action_what_is
@@ -29,6 +30,7 @@ actions:
   - utter_infection_behavior
   - utter_why_quarantine
   - utter_corona_test
+  - utter_protection
 
 slots:
   topic:
@@ -39,7 +41,7 @@ entities:
 
 responses:
   utter_default:
-  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten, wenn ich deine Frage zu Covid19 nihct beantworten kann schau doch mal bei https://www.rki.de/DE/Home/homepage_node.html vorbei"
+  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten, wenn ich deine Frage zu Covid19 nihct beantworten kann schau doch mal bei https://www.who.int/news-room/q-a-detail/q-a-coronaviruses vorbei"
 
   utter_greet:
   - text: "Hallo!"
@@ -80,6 +82,14 @@ responses:
     - text: "Nur bestimmte Labore sind für die Durchführung von Tests für COVID-19 qualifiziert. Solche Labors sind Ihrer Gesundheitsbehörde oder Ihrem Gesundheitsdienstleister
             bekannt, so dass Sie möglicherweise angewiesen werden, ein spezielles Labor aufzusuchen, wenn dieser Test erforderlich ist. Labortests können Abstrichproben, Sputumtests, Bluttests
             oder Nasen- oder Luftröhrenabstriche (Entnahme einer Probe aus dem Inneren Ihrer Nase oder Ihrer Atemwege) umfassen."
+
+  utter_protection:
+    - text: "Halten Sie beim Husten oder Niesen größtmöglichen Abstand – drehen Sie sich am besten weg. Niesen Sie
+             in die Armbeuge oder in ein Papiertaschentuch, das Sie danach entsorgen. Vermeiden Sie Berührungen,
+             wenn Sie andere Menschen begrüßen, und waschen Sie Ihre Hände regelmäßig und gründlich mindestens
+             20  Sekunden lang mit Wasser und Seife. Haben Sie sich in einem Gebiet aufgehalten, in dem bereits Erkrankungsfälle mit dem neuartigen Coronavirus aufgetreten sind? Sollten innerhalb von 14 Tagen die oben beschriebenen Krankheitszeichen auftreten, vermeiden Sie unnötige Kontakte zu weiteren Personen und bleiben Sie nach Möglichkeit
+             zu  Hause. Kontaktieren Sie Ihre Hausärztin oder Ihren Hausarzt per Telefon oder wenden Sie sich an die
+             Nummer 116 117 und besprechen Sie das weitere Vorgehen, bevor Sie in die Praxis gehen."
 
 session_config:
   session_expiration_time: 60
