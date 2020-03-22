@@ -81,6 +81,10 @@
 * why_quarantine
     - utter_why_quarantine
     
+## test
+* corona_test
+    - utter_corona_test
+    
 ## mix
 * greet
     - utter_greet
