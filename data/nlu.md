@@ -127,19 +127,26 @@
 - Gibt es bald einen Impfstoff 
 - Impfstoff für Corona
 
-## intent: why_quarantine
+## intent: quarantine
 - Warum muss ich in Quarantäne? 
 - Wann muss ich in Quarantäne? 
 - Wie lange muss ich in Quarantäne?
 - Länge der Quarantäne
 - Dauer der Quarantäne
 
-## intent: corona_test
+## intent: test
 - Welche Tests gibt es? 
 - Gibt es Tests? 
 - Wie kann ich mich testen lassen?
 - Ablauf von Testverfahren 
 - Wie werden Tests durchgeführt?
+
+## intent: age
+- Welche Altersgruppen sind von der Corona- Virus Infektion am stärksten betroffen?
+- Wer kann sich micht Corona-Virus anstecken?
+- Können sich nur ältere Menschen mit dem Corona-Virus anstecken?
+- Ab welchem Alter gehört man zur Risikogruppe?
+- Risiko für ältere
 
 ## intent:current_infected
 - Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
