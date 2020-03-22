@@ -13,6 +13,7 @@ intents:
   - infection_behavior
   - why_quarantine
   - corona_test
+  - affected_ages
 
 actions:
   - action_what_is
@@ -29,6 +30,7 @@ actions:
   - utter_infection_behavior
   - utter_why_quarantine
   - utter_corona_test
+  - utter_affected_ages
 
 slots:
   topic:
@@ -80,6 +82,9 @@ responses:
     - text: "Nur bestimmte Labore sind für die Durchführung von Tests für COVID-19 qualifiziert. Solche Labors sind Ihrer Gesundheitsbehörde oder Ihrem Gesundheitsdienstleister
             bekannt, so dass Sie möglicherweise angewiesen werden, ein spezielles Labor aufzusuchen, wenn dieser Test erforderlich ist. Labortests können Abstrichproben, Sputumtests, Bluttests
             oder Nasen- oder Luftröhrenabstriche (Entnahme einer Probe aus dem Inneren Ihrer Nase oder Ihrer Atemwege) umfassen."
+
+  utter_affected_ages:
+    - text: "Laut RKI sind ca. 57% der mit dem Corona- Virus infizierten Personen in einem Alter zwischen 35 und 59 Jahren. Alles Todesfälle"
 
 session_config:
   session_expiration_time: 60
