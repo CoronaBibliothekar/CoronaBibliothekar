@@ -93,6 +93,12 @@
 ## mortality
 * mortality
     - utter_mortality
+    
+    
+## treatment
+* treatment
+    - utter_treatment
+    
 ## mix
 * greet
     - utter_greet
