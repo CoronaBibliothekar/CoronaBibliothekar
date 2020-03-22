@@ -9,24 +9,31 @@ actions:
 - utter_corona_test
 - utter_default
 - utter_greet
+- utter_incubation_time
 - utter_infection_behavior
 - utter_mortality
 - utter_protection
 - utter_prpability_infection
+- utter_return_from_infected_area
+- utter_should_test
+- utter_symptoms
 - utter_tab_water
+- utter_travel
 - utter_treatment
 - utter_vaccine
 - utter_virus_origin
-- utter_why_quarantine
-- utter_symptoms
 - utter_what_if_symptoms
-- utter_should_test
+- utter_why_quarantine
 entities:
 - location
-- topic
 - metric
+- topic
 intents:
+- symptoms
+- travel
+- return_from_infected_area
 - should_test
+- incubation_time
 - what_if_symptoms
 - mortality
 - protection
@@ -47,32 +54,7 @@ intents:
 - current_bundeslaender
 - why_quarantine
 - treatment
-- symptoms
 responses:
-  utter_should_test:
-    - text: Wenn sie Fieber, Husten und Atembeschwerden entwickeln und sich in einem betroffenen Gebiet aufgehalten haben oder
-        wenn Sie Kontakt mit jemandem mit bestätigtem COVID-19 gehabt haben wenden Sie sich an Ihre Gesundheitsbehörde oder Ihren Gesundheitsdienstleister. Sie werden die besten Informationen für Sie haben. Gehen Sie nicht in eine Arztpraxis oder ein Krankenhaus, ohne vorher anzurufen.
-
-        Verschiedene Gesundheitsbehörden werden unterschiedliche Richtlinien dafür haben, wer sich testen lassen sollte, und diese werden sich ändern, wenn sich unser Verständnis des Virus verbessert. Sie können zum Beispiel die ECDC-Richtlinien hier, die CDC-Richtlinien hier und das Flussdiagramm des Robert-Koch-Instituts hier sehen.
-
-  utter_what_if_symptoms:
-    - text: Ab 2020/03/06 müssen Sie sich, wenn Sie sich in einem Hochrisikogebiet aufgehalten haben oder Kontakt mit jemandem hatten, der eine bestätigte COVID-19 hat, isolieren und in einem Haus bleiben. Bleiben Sie zu Hause, außer zur Pflege, vermeiden Sie den Kontakt mit anderen, tragen Sie eine Gesichtsmaske, wenn Sie sich in der Nähe anderer aufhalten müssen, decken Sie Ihren Husten und Niesen ab, reinigen Sie Ihre Hände häufig und vermeiden Sie die gemeinsame Nutzung persönlicher Gegenstände.
-
-            Der NHS hat ein 111 Online Portal veröffentlicht, das Risikobereiche und die nächsten Schritte aufzeigt. Auch wenn Sie nicht im Gebiet des UKI wohnen, kann dieser Leitfaden anwendbar sein. Wenden Sie sich an Ihre Gesundheitsbehörde, um weitere Informationen zu erhalten.
-
-            Wenn Sie beginnen, Symptome zu zeigen (Fieber, Husten, Atembeschwerden), sollten Sie sich außerdem an Ihre Gesundheitsbehörde oder Ihren Gesundheitsdienstleister wenden. Sie werden die besten Informationen für Sie haben. Gehen Sie nicht in eine Arztpraxis oder ein Krankenhaus, ohne vorher anzurufen.
-  utter_symptoms:
-  - text: Hohes Fieber (normalerweise über 38C)
-      Husten
-      Kurzatmigkeit
-      Müdigkeit
-
-      Einige Patienten können Schmerzen und Beschwerden, eine verstopfte Nase, eine laufende Nase, Halsschmerzen oder Durchfall haben. Diese Symptome sind in der Regel leicht und beginnen allmählich.
-
-      Aber diese Symptome bedeuten nicht unbedingt, dass Sie die Krankheit haben. Die Symptome sind ähnlich wie bei anderen Krankheiten, die viel häufiger auftreten, wie zum Beispiel Erkältung oder Grippe. Wenn Sie nicht an einen Ort mit einem aktiven Ausbruch gereist sind oder mit jemandem mit bestätigtem COVID-19 in Kontakt gekommen sind, ist es sehr unwahrscheinlich, dass Sie die Krankheit haben.
-
-      Wenden Sie sich an Ihre Gesundheitsbehörde oder Ihren medizinischen Betreuer, wenn Sie glauben, dass Sie an der Krankheit leiden könnten.
-
   utter_affected_ages:
   - text: Laut RKI sind ca. 57% der mit dem Corona- Virus infizierten Personen in
       einem Alter zwischen 35 und 59 Jahren. Alles Todesfälle
@@ -98,6 +80,12 @@ responses:
       vorbei
   utter_greet:
   - text: Hallo!
+  utter_incubation_time:
+  - text: "Die \"Inkubationszeit\" bezeichnet die Zeit zwischen dem Auffangen des\
+      \ Virus und dem Beginn der Symptome der Krankheit.\nAb 2020/02/27 reichen die\
+      \ meisten Schätzungen der Inkubationszeit für COVID-19 von 1-14 Tagen, meist\
+      \ etwa fünf Tage. Diese Schätzungen werden aktualisiert, sobald mehr Daten verfügbar\
+      \ sind."
   utter_infection_behavior:
   - text: Menschen können COVID-19 von anderen Personen bekommen, die von dem Virus
       befallen sind. Die Krankheit kann sich von Person zu Person durch kleine Tröpfchen
@@ -152,9 +140,58 @@ responses:
       \ möchten. Die WHO veröffentlicht täglich Aktualisierungen zur weltweiten COVID-19-Situation.\n\
       Sie können diese unter https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports\
       \ sehen."
+  utter_return_from_infected_area:
+  - text: "Ab 2020/03/06 müssen Sie sich, wenn Sie sich in einem Risikogebiet aufgehalten\
+      \ haben oder mit jemandem mit bestätigtem COVID-19 in Kontakt gekommen sind,\
+      \ isolieren und in einem Haus bleiben. Bleiben Sie zu Hause, außer zur Pflege,\
+      \ vermeiden Sie den Kontakt mit anderen, tragen Sie eine Gesichtsmaske, wenn\
+      \ Sie sich in der Nähe anderer aufhalten müssen, decken Sie Ihren Husten und\
+      \ Niesen ab, reinigen Sie Ihre Hände häufig und vermeiden Sie die gemeinsame\
+      \ Nutzung persönlicher Gegenstände.\nDer NHS hat ein 111 Online Portal  veröffentlicht,\
+      \ das Risikobereiche und die nächsten Schritte aufzeigt. Auch wenn Sie nicht\
+      \ im Gebiet des UKI wohnen, kann dieser Leitfaden anwendbar sein. Wenden Sie\
+      \ sich an Ihre Gesundheitsbehörde, um weitere Informationen zu erhalten.\nWenn\
+      \ Sie beginnen, Symptome zu zeigen (Fieber, Husten, Atembeschwerden), sollten\
+      \ Sie sich außerdem an Ihre Gesundheitsbehörde oder Ihren Gesundheitsdienstleister\
+      \ wenden. Sie werden die besten Informationen für Sie haben. Gehen Sie nicht\
+      \ in eine Arztpraxis oder ein Krankenhaus, ohne vorher anzurufen."
+  utter_should_test:
+  - text: "Wenn sie Fieber, Husten und Atembeschwerden entwickeln und sich in einem\
+      \ betroffenen Gebiet aufgehalten haben oder wenn Sie Kontakt mit jemandem mit\
+      \ bestätigtem COVID-19 gehabt haben wenden Sie sich an Ihre Gesundheitsbehörde\
+      \ oder Ihren Gesundheitsdienstleister. Sie werden die besten Informationen für\
+      \ Sie haben. Gehen Sie nicht in eine Arztpraxis oder ein Krankenhaus, ohne vorher\
+      \ anzurufen.\nVerschiedene Gesundheitsbehörden werden unterschiedliche Richtlinien\
+      \ dafür haben, wer sich testen lassen sollte, und diese werden sich ändern,\
+      \ wenn sich unser Verständnis des Virus verbessert. Sie können zum Beispiel\
+      \ die ECDC-Richtlinien hier, die CDC-Richtlinien hier und das Flussdiagramm\
+      \ des Robert-Koch-Instituts hier sehen."
+  utter_symptoms:
+  - text: "Hohes Fieber (normalerweise über 38C) Husten Kurzatmigkeit Müdigkeit\n\
+      Einige Patienten können Schmerzen und Beschwerden, eine verstopfte Nase, eine\
+      \ laufende Nase, Halsschmerzen oder Durchfall haben. Diese Symptome sind in\
+      \ der Regel leicht und beginnen allmählich.\nAber diese Symptome bedeuten nicht\
+      \ unbedingt, dass Sie die Krankheit haben. Die Symptome sind ähnlich wie bei\
+      \ anderen Krankheiten, die viel häufiger auftreten, wie zum Beispiel Erkältung\
+      \ oder Grippe. Wenn Sie nicht an einen Ort mit einem aktiven Ausbruch gereist\
+      \ sind oder mit jemandem mit bestätigtem COVID-19 in Kontakt gekommen sind,\
+      \ ist es sehr unwahrscheinlich, dass Sie die Krankheit haben.\nWenden Sie sich\
+      \ an Ihre Gesundheitsbehörde oder Ihren medizinischen Betreuer, wenn Sie glauben,\
+      \ dass Sie an der Krankheit leiden könnten."
   utter_tab_water:
   - text: Aktuell gibt es keine Hinweise darauf dass die Gefahr auf eine Infizierung
       mit dem Corona-Virus durch das Leitungswasser besteht (stand 21.03.2020).
+  utter_travel:
+  - text: "Sie sollten veruchen so wenig wie möglich zu reisen, sollte die Reise zwingend\
+      \ erforderlich sein so gilt, das sie im allgemeinem Reisen dürfen, aber es gibt\
+      \ einige Länder, die Sie vermeiden sollten.\nDie CDC führt eine Liste von Reisegesundheitshinweisen\
+      \ für COVID-19. Ab 2020/03/09 heißt es in der Liste\":\"\nVermeiden Sie nicht\
+      \ notwendige Reisen für\":\"\nEuropa Iran Südkorea China\nPraktizieren Sie \"\
+      verstärkte Vorsichtsmaßnahmen\" für\":\"\nJapan\nSie können sich auch auf einer\
+      \ Website der Regierung zur Reiseberatung über Ihre Reisepläne informieren.\
+      \ Beispiele hierfür sind\":\" Großbritannien, USA, Australien Denken Sie daran,\
+      \ dass es auch während des COVID-19-Ausbruchs andere Gründe dafür geben wird,\
+      \ ob Sie an einen bestimmten Ort reisen sollten oder nicht!"
   utter_treatment:
   - text: Aktuell gibt es keine bestätigten Medikamente welche eine Ansteckung mit
       dem Corona-Virus verhindern oder eine Erkrankung mit dem Corona-Virus behandeln
@@ -184,6 +221,21 @@ responses:
       Tier zu Mensch schließen lässt. Später fingen sich Personen, die keinen Kontakt
       zu Tiermärkten hatten, mit dem Virus an, was auf eine Verbreitung von Mensch
       zu Mensch hindeutet.
+  utter_what_if_symptoms:
+  - text: "Ab 2020/03/06 müssen Sie sich, wenn Sie sich in einem Hochrisikogebiet\
+      \ aufgehalten haben oder Kontakt mit jemandem hatten, der eine bestätigte COVID-19\
+      \ hat, isolieren und in einem Haus bleiben. Bleiben Sie zu Hause, außer zur\
+      \ Pflege, vermeiden Sie den Kontakt mit anderen, tragen Sie eine Gesichtsmaske,\
+      \ wenn Sie sich in der Nähe anderer aufhalten müssen, decken Sie Ihren Husten\
+      \ und Niesen ab, reinigen Sie Ihre Hände häufig und vermeiden Sie die gemeinsame\
+      \ Nutzung persönlicher Gegenstände.\nDer NHS hat ein 111 Online Portal veröffentlicht,\
+      \ das Risikobereiche und die nächsten Schritte aufzeigt. Auch wenn Sie nicht\
+      \ im Gebiet des UKI wohnen, kann dieser Leitfaden anwendbar sein. Wenden Sie\
+      \ sich an Ihre Gesundheitsbehörde, um weitere Informationen zu erhalten.\nWenn\
+      \ Sie beginnen, Symptome zu zeigen (Fieber, Husten, Atembeschwerden), sollten\
+      \ Sie sich außerdem an Ihre Gesundheitsbehörde oder Ihren Gesundheitsdienstleister\
+      \ wenden. Sie werden die besten Informationen für Sie haben. Gehen Sie nicht\
+      \ in eine Arztpraxis oder ein Krankenhaus, ohne vorher anzurufen."
   utter_why_quarantine:
   - text: Eine weitere Ausbreitung des neuartigen Coronavirus in Deutschland soll
       so weit wie möglich verlangsamt werden. Hierfür ist es notwendig, die Kontaktpersonen
@@ -197,9 +249,9 @@ session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
 slots:
-  topic:
-    type: text
   location:
     type: text
   metric:
+    type: text
+  topic:
     type: text

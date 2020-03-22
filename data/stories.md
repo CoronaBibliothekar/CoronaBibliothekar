@@ -287,3 +287,48 @@
     - utter_what_if_symptoms
 * should_test
     - utter_should_test
+    
+# incubation time
+* incubation_time
+    - utter_incubation_time
+    
+# should test incubation time
+* should_test
+    - utter_should_test
+* incubation_time
+    - utter_incubation_time
+    
+# travel
+* travel
+    - utter_travel
+    
+# incubation time + travel
+* incubation_time
+    - utter_incubation_time
+* travel
+    - utter_travel
+    
+# return from infected area
+* return_from_infected_area
+    - utter_return_from_infected_area
+    
+# incubation time + travel + return home
+* incubation_time
+    - utter_incubation_time
+* travel
+    - utter_travel
+* return_from_infected_area
+    - utter_return_from_infected_area
+## interactive_story_1
+* symptoms
+    - utter_symptoms
+* what_if_symptoms
+    - utter_what_if_symptoms
+* should_test
+    - utter_should_test
+* incubation_time
+    - utter_incubation_time
+* travel
+    - utter_travel
+* return_from_infected_area
+    - utter_return_from_infected_area

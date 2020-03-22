@@ -99,6 +99,7 @@
 - Wie verläuft die Krankheit
 - Krankheitsverlauf Corona
 - Wie verläuft die COVID-19 Erkrankung?
+- was sind die Symptome des Coronavirus
 - Wie verläuft Corona?
 - Was für Symptome hat Corona?
 - Was passiert wenn jemand Covid-19 hat?
@@ -110,6 +111,7 @@
 - Symptome einer Infektion
 - Welche Symptome können auftreten
 - Mit welchen Symptomen ist zu rechnen
+- Was sind die Symptome
 
 ## intent:antibiotics
 - Sind Antibiotika wirksam bei der Vorbeugung oder Behandlung des COVID-19?
@@ -265,9 +267,6 @@
 - welches verhalten ist empfohlen
 - welches verhalten ist empfohlen um sich zu schützen
 - Wie kann ich mich gut schützen?
-
-
-## infection_behavior
 - Wie verbreitet sich das Corona Virus
 - Wie kann sich das Virus ausbreiten
 - Wie wird man infiziert?
@@ -290,6 +289,7 @@
 - was tun wenn man sich angesteckt hat
 - Verhalten wenn Corona eingefangen
 - Kann ich zum Arzt gehn?
+- Was wenn ich Symptome aufweise?
 
 ## intent:should_test
 - Sollte ich mich testen lassen?
@@ -301,3 +301,41 @@
 - Wann sollte ich einen Test auf Coronaviren machen
 - Sollte ich mich auf Covid19 testen lassen
 - Brauche ich einen test auf das Coronavirus
+
+## intent:incubation_time
+- Wie ist die Inkubationszeit?
+- Wie lange ist die Inkubationszeit
+- Inkubationszeit
+- Wie lange bis Symptome auftreten können
+- Wann können symptome auftreten
+- Dauer bis zum Ausbruch
+- Dauer Ansteckung bis zum Ausbruch
+- Wieviel Zeit vergeht zwischen der Ansteckung und dem auftreten der ersten Symptome
+- Wieviel zeit kann vergehen bis die ersten Symptome auftreten
+- Wie lange würde es dauern bis die ersten Symptome auftreten
+
+## intent:travel
+- Kann ich reisen?
+- Kann ich in den urlaub fahren
+- Wie sieht es mit verreisen aus
+- Darf ich reisen
+- Darf ich eine Reise antreten?
+- Wann kann ich wieder verreisen?
+- Was ist mit meinem Urlaub?
+- Wie kann ich Urlaub machen?
+- Darf ich meinen urlaub antreten.
+- Ist es erlaubt zu verreisen
+- ist es gestattet in den Urlaub zu fahren?
+- Darf ich denn noch reisen?
+
+## intent:return_from_infected_area
+- Ich war in einem betroffenen Gebiet.
+- Ich war in einem Risikogebiet.
+- Kann ich aus einem Risikogebiet zurück?
+- Rückreise Risikogebiete
+- Darf ich aus einem Risikogebiet zurück kommen.
+- Wenn ich ein Risikogebiet besucht habe, darf ich nach hause kommen?
+- Darf man aus einem Risikogebiet wieder ausreisen
+- Kann ich aus einem Gebiet das als Risikogebiet gilt zurückkehren?
+- Kann man ein Risikogebiet wieder verlassen
+- Wenn ich durch ein Risikogebiet reise, darfich es auch wieder verlassen?
