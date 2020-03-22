@@ -89,6 +89,10 @@
 * corona_test
     - utter_corona_test
     
+    
+## mortality
+* mortality
+    - utter_mortality
 ## mix
 * greet
     - utter_greet
