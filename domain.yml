@@ -19,6 +19,10 @@ actions:
   - utter_bye
   - action_current_deaths
   - action_current_bundeslaender
+  - utter_virus_origin
+  - utter_prpability_infection
+  - utter_antibiotics
+  - utter_vaccine
 
 slots:
   topic:
@@ -37,6 +41,27 @@ responses:
   utter_bye:
   - text: "Auf Wiedersehen !"
 
+  utter_virus_origin:
+  - text: "Der Ausbruch von COVID-19 begann im Dezember 2019 in Wuhan, China. Viele der Patienten des COVID-19-Ausbruchs in Wuhan hatten eine Verbindung zu einem großen Markt für Meeresfrüchte und lebende Tiere, was auf eine Ausbreitung von Tier zu Mensch schließen lässt. Später fingen sich Personen, die keinen Kontakt zu Tiermärkten hatten, mit dem Virus an, was auf eine Verbreitung von Mensch zu Mensch hindeutet."
+
+  utter_prpability_infection:
+  - text: "Das Risiko hängt davon ab, wo Sie sich befinden - und insbesondere davon, ob sich dort ein COVID-19-Ausbruch abspielt.
+
+           Für die meisten Menschen an den meisten Orten ist das Risiko, COVID-19 zu bekommen, immer noch gering. Mittlerweile gibt es jedoch Orte auf der ganzen Welt (Städte oder Gebiete), an denen sich die Krankheit ausbreitet. Für Menschen, die in diesen Gebieten leben oder diese besuchen, ist das Risiko, COVID-19 zu bekommen, höher. Regierungen und Gesundheitsbehörden ergreifen jedes Mal energische Maßnahmen, wenn ein neuer Fall von COVID-19 identifiziert wird. Stellen Sie sicher, dass Sie die örtlichen Einschränkungen für Reisen, Bewegung oder große Versammlungen einhalten. Durch die Zusammenarbeit mit Maßnahmen zur Krankheitsbekämpfung wird das Risiko verringert, COVID-19 zu fangen oder zu verbreiten.
+
+           COVID-19-Ausbrüche können eingedämmt und die Übertragung gestoppt werden, wie in China und einigen anderen Ländern gezeigt wurde. Leider können schnell neue Ausbrüche auftreten. Es ist wichtig, sich der Situation bewusst zu sein, in die Sie gehen oder gehen möchten. Die WHO veröffentlicht täglich Aktualisierungen zur weltweiten COVID-19-Situation.
+
+           Sie können diese unter https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports sehen."
+
+  utter_antibiotics:
+    - text: "Antibiotika wirken nicht gegen Viren, sondern nur gegen bakterielle Infektionen. COVID-19 wird durch ein Virus verursacht, daher wirken Antibiotika nicht. Antibiotika sollten deshalb nicht zur Vorbeugung oder Behandlung von COVID-19 eingesetzt werden. Sie sollten nur nach Anweisung eines Arztes zur Behandlung einer bakteriellen Infektion verwendet werden."
+
+  utter_vaccine:
+    - text: "Momentan steht kein Impfstoff zur Verfügung, der vor einer Infektion mit dem neuartigen Coronavirus  schützt. Weltweit wird intensiv an solchen Impfstoffen gearbeitet. Wann ein Impfstoff zum Schutz vor COVID-19 verfügbar sein wird, ist derzeit noch nicht zu sagen.
+
+        Während der aktuellen COVID-19-Pandemie wird das Gesundheitssystem stark belastet. Es ist daher wichtig, einen möglichst guten allgemeinen Gesundheitszustand in der Bevölkerung zu erhalten, damit möglichst wenig zusätzliche ärztliche Hilfe in Anspruch genommen werden muss. Ein umfassender Impfschutz gemäß den aktuellen STIKO-Empfehlungen (sehe: https://www.rki.de/DE/Content/Kommissionen/STIKO/Empfehlungen/Impfempfehlungen_node.html ) kann dazu beitragen. Es ist daher sinnvoll, den Impfstatus zu überprüfen und ggf. versäumte Impfungen nachzuholen. Dies gilt besonders für Impfungen, die vor Infektionen der Atmungsorgane schützen, sowie allgemein für vulnerable Personengruppen (siehe auch „Was bringt die Pneumokokken-Impfung in der aktuellen COVID-19-Pandemie?“ https://www.rki.de/SharedDocs/FAQ/NCOV2019/FAQ_Liste.html#FAQId13818856 ).
+
+        Bei Arztkontakten zur Inanspruchnahme dieser empfohlenen Impfungen sollte vorher telefonisch geklärt werden, dass der Praxisbesuch ohne Kontakt zu Patienten mit Symptomen eines respiratorischen Infekts stattfinden kann und ob Impfstoff verfügbar ist."
 
 session_config:
   session_expiration_time: 60
