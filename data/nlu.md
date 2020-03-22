@@ -127,12 +127,19 @@
 - Gibt es bald einen Impfstoff 
 - Impfstoff für Corona
 
-## intent: quarantine
+## intent: why_quarantine
 - Warum muss ich in Quarantäne? 
 - Wann muss ich in Quarantäne? 
 - Wie lange muss ich in Quarantäne?
 - Länge der Quarantäne
 - Dauer der Quarantäne
+
+## intent: corona_test
+- Welche Tests gibt es? 
+- Gibt es Tests? 
+- Wie kann ich mich testen lassen?
+- Ablauf von Testverfahren 
+- Wie werden Tests durchgeführt?
 
 ## intent:current_infected
 - Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
