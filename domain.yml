@@ -11,6 +11,7 @@ intents:
   - current_deaths
   - current_bundeslaender
   - infection_behavior
+  - why_quarantine
 
 actions:
   - action_what_is
@@ -25,6 +26,7 @@ actions:
   - utter_antibiotics
   - utter_vaccine
   - utter_infection_behavior
+  - utter_why_quarantine
 
 slots:
   topic:
@@ -69,7 +71,8 @@ responses:
   utter_infection_behavior: 
     - text: Menschen können COVID-19 von anderen Personen bekommen, die von dem Virus befallen sind. Die Krankheit kann sich von Person zu Person durch kleine Tröpfchen aus
 
-
+  utter_why_quarantine:
+    - text: "Eine weitere Ausbreitung des neuartigen Coronavirus in Deutschland soll so weit wie möglich verlangsamt werden. Hierfür ist es notwendig, die Kontaktpersonen von labordiagnostisch bestätigten Infektionsfällen zu identifizieren und – je nach individuellem Infektionsrisiko – ihren"
 
 session_config:
   session_expiration_time: 60

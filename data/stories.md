@@ -59,6 +59,10 @@
 * prpability_infection
     - utter_prpability_infection
     
+## infection_behavior
+* infection_behavior
+    - utter_infection_behavior
+    
 ## antibiotics
 * antibiotics
     - utter_antibiotics
