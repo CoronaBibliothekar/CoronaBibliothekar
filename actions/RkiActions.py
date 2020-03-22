@@ -13,6 +13,13 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+# gibt die tabelle des rki zurück, als liste in der alle zeilen aneinandergehängt sind.
+def getcurrent_nubers() -> List[str]:
+    url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, 'html.parser')
+    return [x.get_text().replace(".", "") for x in soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})]
+
 
 
 class ActionCurrentInfected(Action):
@@ -20,13 +27,9 @@ class ActionCurrentInfected(Action):
         return "action_current_infected"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
         try:
-            r = requests.get(url)
-            soup = BeautifulSoup(r.content, 'html.parser')
+            current_infected = getcurrent_nubers()[-4]
 
-            tds = soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})
-            current_infected = (tds[-4].get_text())
             dispatcher.utter_message(
                 text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}".format(
                     current_infected))
@@ -44,11 +47,7 @@ class ActionCurrentDeaths(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
         try:
-            r = requests.get(url)
-            soup = BeautifulSoup(r.content, 'html.parser')
-
-            tds = soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})
-            current_dead = (tds[-1].get_text())
+            current_dead = getcurrent_nubers()[-1]
             dispatcher.utter_message(
                 text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}".format(
                     current_dead))
@@ -67,18 +66,13 @@ class ActionCurrentBundeslaender(Action):
         Dict[Text, Any]]:
         url = 'https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html'
         try:
-            r = requests.get(url)
-            soup = BeautifulSoup(r.content, 'html.parser')
-
-            tds = soup.find_all("td", attrs={"class": "center", "colspan": "1", "rowspan": "1"})
-
             bundeslaender = ["Baden-Württemberg", "Bayern", "Berlin", "Brandenburg", "Bremen", "Hamburg", "Hessen",
                              "Mecklenburg-Vorpommern", "Niedersachsen", "Nordrhein-Westfalen", "Rheinland-Pfalz",
                              "Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein", "Thüringen"]
-
+            aktuelle_zahlen = getcurrent_nubers()
             infected = []
             for i in range(len(bundeslaender)):
-                infected.append(int(tds[4*i].get_text().replace(".", "")))
+                infected.append(int(aktuelle_zahlen[4*i].replace(".", "")))
 
             sorted_bundeslaender = list(reversed(sorted(zip(infected, bundeslaender))))
 
