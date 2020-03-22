@@ -33,7 +33,7 @@ entities:
 
 responses:
   utter_default:
-  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten"
+  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten, wenn ich deine Frage zu Covid19 nihct beantworten kann schau doch mal bei https://www.rki.de/DE/Home/homepage_node.html vorbei"
 
   utter_greet:
   - text: "Hallo!"

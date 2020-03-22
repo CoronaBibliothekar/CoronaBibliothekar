@@ -31,7 +31,7 @@ class ActionCurrentInfected(Action):
             current_infected = getcurrent_nubers()[-4]
 
             dispatcher.utter_message(
-                text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}".format(
+                text="Laut RKI befindet sich die Anzahl der bestätigten Corona-Virus Infektionen in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
                     current_infected))
         except Exception as e:
             dispatcher.utter_message(text=responses.get("current_infected_fallback"))
@@ -49,7 +49,7 @@ class ActionCurrentDeaths(Action):
         try:
             current_dead = getcurrent_nubers()[-1]
             dispatcher.utter_message(
-                text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}".format(
+                text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
                     current_dead))
         except Exception as e:
             dispatcher.utter_message(text=responses.get("current_dead_fallback"))
@@ -76,7 +76,7 @@ class ActionCurrentBundeslaender(Action):
 
             sorted_bundeslaender = list(reversed(sorted(zip(infected, bundeslaender))))
 
-            dispatcher.utter_message(text="Laut RKI sind sind aktuell {}({} Infektionen), {}({} Infektionen) und {}({} Infektionen) am schlimmsten Betroffen".format(
+            dispatcher.utter_message(text="Laut RKI sind sind aktuell {}({} Infektionen), {}({} Infektionen) und {}({} Infektionen) am schlimmsten Betroffen  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
                 sorted_bundeslaender[0][1],
                 sorted_bundeslaender[0][0],
                 sorted_bundeslaender[1][1],
