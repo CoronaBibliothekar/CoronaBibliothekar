@@ -141,6 +141,10 @@
 - Ablauf von Testverfahren 
 - Wie werden Tests durchgeführt?
 
+## intent: mortality
+- Wie ist die Sterblichkeitsrate? 
+- Wieviele Leute sterben?
+
 ## intent: age
 - Welche Altersgruppen sind von der Corona- Virus Infektion am stärksten betroffen?
 - Wer kann sich micht Corona-Virus anstecken?
