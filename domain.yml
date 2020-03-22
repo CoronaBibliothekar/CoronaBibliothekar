@@ -14,7 +14,8 @@ intents:
   - why_quarantine
   - corona_test
   - affected_ages
-
+  - mortality
+  
 actions:
   - action_what_is
   - action_difference
@@ -31,6 +32,7 @@ actions:
   - utter_why_quarantine
   - utter_corona_test
   - utter_affected_ages
+  - utter_mortality
 
 slots:
   topic:
@@ -86,6 +88,18 @@ responses:
   utter_affected_ages:
     - text: "Laut RKI sind ca. 57% der mit dem Corona- Virus infizierten Personen in einem Alter zwischen 35 und 59 Jahren. Alles Todesfälle"
 
+  utter_mortality:
+    - text: "Während der Anmerkungen vom 3. März erklärte die WHO,
+            dass die weltweite Todesrate von COVID-19 bei 3,4% liegt. Diese Rate kann sich jedoch stark ändern, je nachdem, wie
+            viele Menschen man testet - wenn es viele leichte Fälle gibt, die nicht getestet werden, sieht die Sterblichkeitsrate
+            höher aus, als sie tatsächlich ist. Die von einzelnen Ländern, die viele Menschen testen, gemeldete Sterblichkeitsrate ist viel niedriger als die WHO-
+            Schätzung. Zum Beispiel berichtet das Update vom 8. März des südkoreanischen KCDC von einer 0,7%igen Sterblichkeitsrate, und es wurden über 130.000 Menschen
+            getestet. Es ist auch wichtig zu wissen, dass die Sterblichkeitsrate je
+            nach Alter erheblich variiert. In einem Bericht vom 24. Februar stellte die WHO fest, dass die Sterblichkeit mit
+            dem Alter anscheinend zunimmt, wobei die höchste Sterblichkeitsrate (21,9%) bei Menschen über 80 Jahren zu
+            verzeichnen ist."
+
+    
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
