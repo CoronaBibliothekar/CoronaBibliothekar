@@ -15,6 +15,7 @@ intents:
   - corona_test
   - affected_ages
   - mortality
+  - treatment
   
 actions:
   - action_what_is
@@ -33,6 +34,7 @@ actions:
   - utter_corona_test
   - utter_affected_ages
   - utter_mortality
+  - utter_treatment
 
 slots:
   topic:
@@ -99,6 +101,9 @@ responses:
             dem Alter anscheinend zunimmt, wobei die höchste Sterblichkeitsrate (21,9%) bei Menschen über 80 Jahren zu
             verzeichnen ist."
 
+    utter_treatment:
+    - text: "Aktuell gibt es keine bestätigten Medikamente welche eine Ansteckung mit dem Corona-Virus verhindern oder eine Erkrankung mit dem Corona-Virus behandeln (stand 21.03.2020)."
+    
     
 session_config:
   session_expiration_time: 60
