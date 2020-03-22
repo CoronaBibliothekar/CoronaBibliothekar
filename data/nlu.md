@@ -84,8 +84,8 @@
 - Weißt du ob es unterschiede zu [Sars](topic) gibt
 
 
-##intent:prpability_infection
-- Was ist die Wahrscheinlichkeit dass man COVID -19 kriegt?
+## intent:prpability_infection
+- Was ist die Wahrscheinlichkeit dass man COVID-19 kriegt?
 - Wie warscheinlich ist es, dass ich COVID-19 kriege
 - Wahrscheinlichkiet dass ich das bekomme
 - Risiko für mich
@@ -95,6 +95,11 @@
 - Chance Infektion
 - Mit welcher Wahrscheinlichkeit werde ich mich infizieren.
 
+## intent:infection_behavior
+- Wie verläuft die COVID-19 Erkrankung?
+- Wie verläuft Corona?
+- Was für Symptome hat Corona?
+- Was passiert wenn jemand Covid-19 hat?
 
 ## intent:antibiotics
 - Sind Antibiotika wirksam bei der Vorbeugung oder Behandlung des COVID-19?
