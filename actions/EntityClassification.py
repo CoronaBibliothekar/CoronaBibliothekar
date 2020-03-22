@@ -12,7 +12,7 @@ from Levenshtein import distance
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-
+# Antwortet auf Grage nach der bedeutng con Covid19 und Coronaviren
 class ActionWhatIs(Action):
     def name(self) -> Text:
         return "action_what_is"
@@ -20,6 +20,7 @@ class ActionWhatIs(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         topic = str(tracker.get_slot('topic'))
 
+        # Levenshtein distanz um trotz rechtschreibfehlern noch die richtigen daten zu liefern.
         distance_covid = min([distance(topic, x) for x in ["Covid", "Virus", "Covid19", "covid", "covid19"]])
         distance_corona = min([distance(topic, x) for x in ["Corona", "Coronavirus", "Coronaviren"]])
 
@@ -30,7 +31,7 @@ class ActionWhatIs(Action):
 
         return []
 
-
+# Unterschiede zur grippe und zu Sars/Mers
 class ActionDifference(Action):
     def name(self) -> Text:
         return "action_difference"
@@ -38,6 +39,7 @@ class ActionDifference(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         topic = str(tracker.get_slot('topic'))
 
+        # Levenshtein distanz um trotz rechtschreibfehlern noch die richtigen daten zu liefern.
         distance_flu = min([distance(topic, x) for x in ["Grippe", "Influenza"]])
         distance_sars_mers = min([distance(topic, x) for x in ["Sars", "Mers"]])
 
