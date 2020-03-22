@@ -196,3 +196,7 @@
 - Welche Bundesländer haben die meisten infizierten
 - Bundeslaender infizierte
 
+## intent: tab_water
+- Kann ich weiterhin Leitungswasser trinken?
+- Kann der Virus durch das Leitungswasser übertragen werden?
+- Kann das Virus durch Wasser in den Leitungen übertragen werden?
