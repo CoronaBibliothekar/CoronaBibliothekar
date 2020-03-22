@@ -19,11 +19,13 @@ actions:
 - utter_virus_origin
 - utter_why_quarantine
 - utter_symptoms
+- utter_what_if_symptoms
 entities:
 - location
 - topic
 - metric
 intents:
+- what_if_symptoms
 - mortality
 - protection
 - antibiotics
@@ -45,6 +47,12 @@ intents:
 - treatment
 - symptoms
 responses:
+  utter_what_if_symptoms:
+    - text: Ab 2020/03/06 müssen Sie sich, wenn Sie sich in einem Hochrisikogebiet aufgehalten haben oder Kontakt mit jemandem hatten, der eine bestätigte COVID-19 hat, isolieren und in einem Haus bleiben. Bleiben Sie zu Hause, außer zur Pflege, vermeiden Sie den Kontakt mit anderen, tragen Sie eine Gesichtsmaske, wenn Sie sich in der Nähe anderer aufhalten müssen, decken Sie Ihren Husten und Niesen ab, reinigen Sie Ihre Hände häufig und vermeiden Sie die gemeinsame Nutzung persönlicher Gegenstände.
+
+            Der NHS hat ein 111 Online Portal veröffentlicht, das Risikobereiche und die nächsten Schritte aufzeigt. Auch wenn Sie nicht im Gebiet des UKI wohnen, kann dieser Leitfaden anwendbar sein. Wenden Sie sich an Ihre Gesundheitsbehörde, um weitere Informationen zu erhalten.
+
+            Wenn Sie beginnen, Symptome zu zeigen (Fieber, Husten, Atembeschwerden), sollten Sie sich außerdem an Ihre Gesundheitsbehörde oder Ihren Gesundheitsdienstleister wenden. Sie werden die besten Informationen für Sie haben. Gehen Sie nicht in eine Arztpraxis oder ein Krankenhaus, ohne vorher anzurufen.
   utter_symptoms:
   - text: Hohes Fieber (normalerweise über 38C)
       Husten

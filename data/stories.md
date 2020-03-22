@@ -264,3 +264,13 @@
 ## symptoms
 * symptoms
     - utter_symptoms
+    
+# what if
+* what_if_symptoms
+    - utter_what_if_symptoms
+    
+# symptoms + what if
+* symptoms
+    - utter_symptoms
+* what_if_symptoms
+    - utter_what_if_symptoms

@@ -278,3 +278,15 @@
 - Wie kann es passieren das man sich mit Covid19 infiziert
 - Prozess der Ansteckung
 - Wie steckt man sich an
+
+## intent:what_if_symptoms
+- Was soll ich tun, wenn ich Symptome habe?
+- Was tue ich, wenn ich Corona habe?
+- Was tue ich, wenn ich glaube Covid19 zu haben?
+- Was tue ich, wenn ich Covid-19 habe?
+- Verhalten bei Symptomen
+- Was wenn ich Symptome entwickle
+- Was soll man tun wenn man vermutet sich angesteckt zu haben
+- was tun wenn man sich angesteckt hat
+- Verhalten wenn Corona eingefangen
+- Kann ich zum Arzt gehn?
