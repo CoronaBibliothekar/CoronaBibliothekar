@@ -44,8 +44,8 @@ class ActionCurrentNumbers(Action):
                 metric = ""
 
             # Levenshtein distanz um trotz rechtschreibfehlern noch die richtigen daten zu liefern.
-            distance_infected = min([distance(location, x) for x in ["", "Infiziert", "Infektionen", "Fälle", "Infektionszahlen"]])
-            distance_deaths = min([distance(location, x) for x in ["Tote", "gestorben", "Todesfälle", "Toten"]])
+            distance_infected = min([distance(metric, x) for x in ["", "Infiziert", "Infektionen", "Fälle", "Infektionszahlen"]])
+            distance_deaths = min([distance(metric, x) for x in ["Tote", "gestorben", "Todesfälle", "Toten"]])
 
             distance_germany = min([distance(location, x) for x in ["Deutschland", "", "Bundesweit"]])
             distance_corona_bundesland = min([distance(location, x) for x in bundeslaender])
@@ -60,7 +60,7 @@ class ActionCurrentNumbers(Action):
                     # Tote in ganz Deutschland
                     dispatcher.utter_message(
                         text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
-                            current_numbers[-2]))
+                            current_numbers[-1]))
             else:
                 # Levenshtein distanz um trotz rechtschreibfehlern noch die richtigen daten zu liefern.
                 distance_bundeslaender = [distance(location, x) for x in bundeslaender]
