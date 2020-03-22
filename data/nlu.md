@@ -144,6 +144,10 @@
 ## intent: mortality
 - Wie ist die Sterblichkeitsrate? 
 - Wieviele Leute sterben?
+- Wie hoch ist die Mortaliät
+- Sterblichkeit
+- Sterblichkeitsrate
+- Wie hoch ist die Sterblichkeitsrate
 
 ## intent: age
 - Welche Altersgruppen sind von der Corona- Virus Infektion am stärksten betroffen?
@@ -156,6 +160,13 @@
 - Welche Behandlungsmöglichkeiten gibt es gegen den Corona-Virus?
 - Welche Medikamente wirken gegen das Corona-Virus?
 - Kann ich mich gegen das Corona-Virus durch Medikamente schützen? Medikamente?
+- Gibt es eine behandlung
+- Ist eine therapie vorhanden
+- Wie wird eine Infektion behandelt
+- Wie kann man das Coronavirus Behandeln
+- Wie kann eine Infektion mit Covid19 behandelt werden
+- Therapie für infizierte
+- Gibt es ein Medikament gegen Corona
 
 ## intent:current_infected
 - Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
@@ -200,3 +211,27 @@
 - Kann ich weiterhin Leitungswasser trinken?
 - Kann der Virus durch das Leitungswasser übertragen werden?
 - Kann das Virus durch Wasser in den Leitungen übertragen werden?
+- Ist Leitungswasser gefährlich
+- Leitungswasser infektion
+- Infektion durch Leitungswasser
+- kann man wasser aus dem Wasserhan trinken
+- Ist das wasser aus dem wasserhan sicher
+- kann ich asu dem Wasserhahn trinken
+
+
+# intent:protection
+- was kann ich tun um mich zu schützen?
+- Wie kann ich mich schützen
+- wie kann ich andere schützen
+- Kann ich die wahrscheinlichkeit verringern mich anzustecken
+- Was soll ich tun umeine infektion zu vermeiden
+- Wie kann ich mich und andere schützen
+- Wie kann ich eine infektion vermeiden
+- effektiv schützen
+- Schutzmaßnahmen
+- Mich und meine Familie schützen
+- effektive schutzmaßnahmen
+- vermeidung von infektionen
+- infektionen vorbeugen
+- welches verhalten ist empfohlen
+- welches verhalten ist empfohlen um sich zu schützen

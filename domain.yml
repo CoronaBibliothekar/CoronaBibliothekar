@@ -17,7 +17,8 @@ intents:
   - mortality
   - treatment
   - tab_water
-  
+  - protection
+
 actions:
   - action_what_is
   - action_difference
@@ -37,6 +38,7 @@ actions:
   - utter_mortality
   - utter_treatment
   - utter_tab_water
+  - utter_protection
 
 slots:
   topic:
@@ -47,7 +49,7 @@ entities:
 
 responses:
   utter_default:
-  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten"
+  - text: "Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen zum Thema Coronavirus beantworten, wenn ich deine Frage zu Covid19 nihct beantworten kann schau doch mal bei https://www.who.int/news-room/q-a-detail/q-a-coronaviruses vorbei"
 
   utter_greet:
   - text: "Hallo!"
@@ -79,10 +81,10 @@ responses:
 
 
   utter_infection_behavior: 
-    - text: "Menschen können COVID-19 von anderen Personen bekommen, die von dem Virus befallen sind. Die Krankheit kann sich von Person zu Person durch kleine Tröpfchen aus"
+    - text: "Menschen können COVID-19 von anderen Personen bekommen, die von dem Virus befallen sind. Die Krankheit kann sich von Person zu Person durch kleine Tröpfchen aus Nase oder Mund übertragen, wenn eine Person mit COVID-19 hustet oder ausatmet. Diese Tröpfchen landen auf Gegenständen und Oberflächen um die Person herum. Andere Menschen können sich dann mit COVID-19anstecken, indem sie diese Objekte oder Oberflächen berühren und dann ihre Augen, Nase oder ihren Mund berühren. Menschen können sich auch mit COVID-19 anstecken, wenn sie Tröpfchen von einer Person mit COVID-19 einatmen, die Tröpfchen aushustet oder ausatmet. Aus diesem Grund ist es wichtig, mehr als 1 Meter von einer kranken Person entfernt zu sein."
 
   utter_why_quarantine:
-    - text: "Eine weitere Ausbreitung des neuartigen Coronavirus in Deutschland soll so weit wie möglich verlangsamt werden. Hierfür ist es notwendig, die Kontaktpersonen von labordiagnostisch bestätigten Infektionsfällen zu identifizieren und – je nach individuellem Infektionsrisiko – ihren"
+    - text: "Eine weitere Ausbreitung des neuartigen Coronavirus in Deutschland soll so weit wie möglich verlangsamt werden. Hierfür ist es notwendig, die Kontaktpersonen von labordiagnostisch bestätigten Infektionsfällen zu identifizieren und – je nach individuellem Infektionsrisiko – ihren Gesundheitszustand für die maximale Dauer der Inkubationszeit (14 Tage) zu beobachten, wenn geboten auch in häuslicher Quarantäne. Das RKI gibt Empfehlungen zum Management von Kontaktpersonen, die durch das zuständige Gesundheitsamt unter Berücksichtigung der angestrebten Schutzziele an die Situation vor Ort angepasst werden können."
 
   utter_corona_test:
     - text: "Nur bestimmte Labore sind für die Durchführung von Tests für COVID-19 qualifiziert. Solche Labors sind Ihrer Gesundheitsbehörde oder Ihrem Gesundheitsdienstleister
@@ -103,13 +105,20 @@ responses:
             dem Alter anscheinend zunimmt, wobei die höchste Sterblichkeitsrate (21,9%) bei Menschen über 80 Jahren zu
             verzeichnen ist."
 
-    utter_treatment:
+  utter_treatment:
     - text: "Aktuell gibt es keine bestätigten Medikamente welche eine Ansteckung mit dem Corona-Virus verhindern oder eine Erkrankung mit dem Corona-Virus behandeln (stand 21.03.2020)."
     
-    utter_tab_water:
-    - text: "Aktuell gibt es keine Hinweise darauf dass die Gefahr auf eine Infizierung mit dem Corona-Virus durch das Leitungswasser besteht
-(stand 21.03.2020)."
+  utter_tab_water:
+    - text: "Aktuell gibt es keine Hinweise darauf dass die Gefahr auf eine Infizierung mit dem Corona-Virus durch das Leitungswasser besteht (stand 21.03.2020)."
     
+  utter_protection:
+    - text: "Halten Sie beim Husten oder Niesen größtmöglichen Abstand – drehen Sie sich am besten weg. Niesen Sie
+             in die Armbeuge oder in ein Papiertaschentuch, das Sie danach entsorgen. Vermeiden Sie Berührungen,
+             wenn Sie andere Menschen begrüßen, und waschen Sie Ihre Hände regelmäßig und gründlich mindestens
+             20  Sekunden lang mit Wasser und Seife. Haben Sie sich in einem Gebiet aufgehalten, in dem bereits Erkrankungsfälle mit dem neuartigen Coronavirus aufgetreten sind? Sollten innerhalb von 14 Tagen die oben beschriebenen Krankheitszeichen auftreten, vermeiden Sie unnötige Kontakte zu weiteren Personen und bleiben Sie nach Möglichkeit
+             zu  Hause. Kontaktieren Sie Ihre Hausärztin oder Ihren Hausarzt per Telefon oder wenden Sie sich an die
+             Nummer 116 117 und besprechen Sie das weitere Vorgehen, bevor Sie in die Praxis gehen."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
