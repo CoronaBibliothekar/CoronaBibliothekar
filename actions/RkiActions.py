@@ -62,6 +62,7 @@ class ActionCurrentNumbers(Action):
                         text="Laut RKI befindet sich die Anzahl der Todesfälle aufgrund von Corona-Virus in Deutschland aktuell bei {}  https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html".format(
                             current_numbers[-2]))
             else:
+                # Levenshtein distanz um trotz rechtschreibfehlern noch die richtigen daten zu liefern.
                 distance_bundeslaender = [distance(location, x) for x in bundeslaender]
                 bundesland = list(sorted(zip(distance_bundeslaender, bundeslaender)))[0][1]
                 if distance_infected < distance_deaths:
