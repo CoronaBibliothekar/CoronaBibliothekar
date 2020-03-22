@@ -152,6 +152,11 @@
 - Ab welchem Alter gehört man zur Risikogruppe?
 - Risiko für ältere
 
+## intent: treatment
+- Welche Behandlungsmöglichkeiten gibt es gegen den Corona-Virus?
+- Welche Medikamente wirken gegen das Corona-Virus?
+- Kann ich mich gegen das Corona-Virus durch Medikamente schützen? Medikamente?
+
 ## intent:current_infected
 - Wie viele bestätigte Corona-Virus Infektionen gibt es in Deutschland zur Zeit?
 - Wie viele bestätigte Corona-Virus Fälle gibt es in Deutschland zur Zeit?
