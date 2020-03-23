@@ -11,12 +11,11 @@ Mit dem Chatbot CoronaBibliothekar schaffen wir eine Anlaufstelle direkt im Post
 Der Prototyp des CoronaBibliothekars wird mit Rasa, einem Open Source Chatbot-Framework, erstellt. Der Chatbot soll über Telegram und Facebook Messenger erreichbar und getestet werden. Aktuelle Daten werden von der Seite des RKI geladen.
 
 ## weitere Informationen
-Weitere Informationen zu diesem projekt finden sie auf [Devpost](https://devpost.com/software/1_039_staatlichekommunikation_coronabibliothekar)
+Weitere Informationen zu diesem Projekt finden sie auf [Devpost](https://devpost.com/software/1_039_staatlichekommunikation_coronabibliothekar)
 
 ## Setup
-Zu starten des Projekts benötigen sie die Module `rasa`, `rasa-sdk` `BeautifulSoup4`, `requests`, `python-Levenshtein`, und `yaml`. <br />
-Tragen sie alle verbindungsinformationen zu Platformen die sie mit dem Bot ausstatten wollen in die `credentials.yml` ein. Eine genaue anleitung finden sie unter [https://rasa.com/docs/rasa/user-guide/messaging-and-voice-channels]().<br />
-Um den Bot startklar zu machen muss er zuerst trainiert werden: `rasa train`.<br />
-Starten sie zudem den action server mit `rasa run actions`. Sollte ein `ModuleNotFoundError` auftreten vergewissern sie sich das das im Fehler genannte Python Modul auf ihrem System verfügbar ist.<br />
-Aachdem das Traning abgeschlossen ist und der action server gestartet ist, können sie den bot mit `rasa run` starten.<br />
-Sollten sie keine credentials angegeben haben können sie den bot von der commandozeile aus testen. verwenden sie hierfür den Befehl `rasa shell`
+Tragen Sie alle Verbindungsinformationen zu Plattformen die sie mit dem Bot ausstatten wollen in die `credentials.yml` Datei ein. Eine genaue Anleitung finden sie unter [https://rasa.com/docs/rasa/user-guide/messaging-and-voice-channels]().<br /><br />
+Um den Bot startklar zu machen, muss er zuerst trainiert werden: `rasa train`.<br /><br />
+Starten Sie zudem den Action Server mit `rasa run actions`. Sollte ein `ModuleNotFoundError` auftreten vergewissern sie sich, dass das im Fehler genannte Python Modul auf ihrem System verfügbar ist.<br /><br />
+Nachdem das Training abgeschlossen ist und der Action Server gestartet ist, können sie den bot mit `rasa run` starten.<br /><br />
+Sollten sie keine credentials angegeben haben können sie den bot von der Kommandozeile aus testen. Verwenden sie hierfür den Befehl `rasa shell`
