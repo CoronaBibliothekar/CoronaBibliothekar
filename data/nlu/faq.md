@@ -1,48 +1,8 @@
-## intent:greet
-- hallo
-- guten morgen
-- hi
-- guten tag
-- Hallo!
-- Moin
-- Servus
-- grüß Gott
+<!---
+    FAQ intents
+-->
 
-## intent:goodbye
-- tschüss
-- auf wiedersehen!
-- bis später
-- bye
-- Danke und auf Wiedershen
-- Bis dann
-- Mach's gut
-- Man sieht sich
-
-## intent:what_is
-- Was ist das [Coronavirus](topic)
-- Was hat es mit dem [Coronavirus](topic) auf sich
-- [Coronavirus](topic)
-- [Coronaviren](topic)
-- [Corona Virus](topic)
-- Was sind [Coronaviren](topic)
-- [Corona](topic)
-- Ich möchte wissen was das [Corona](topic) ist.
-- Kennst du das [Corona Virus](topic)
-- Was kannst du mir zum [Coronavirus](topic) sagen.
-- Was weißt du über das [Coronavirus](topic)
-- Was ist [Covid 19](topic)
-- Was bedeutet [Covid19](topic)
-- [Covid-19](topic)
-- [covid19](topic)
-- Bedeutung [covid 19](topic)
-- Kannst du mir sagen was [Covid19](topic) bedeutet.
-- [covid](topic)
-- was heißt [Covid](topic)
-- Das [Virus](topic)
-- Ich möchte wissen was [Covid-19](topic) ist.
-- Kennst du [Covid-19](topic)?
-
-## intent:virus_origin
+## intent: faq/virus_origin
 - Woher kommt das Virus
 - Wie ist das Virus entstanden
 - Wie ist Das Coronavirus entstanden
@@ -58,30 +18,7 @@
 - Weißt du woher das Virus kommt
 - Kannst du mir sagen woher das virus kommt
 
-## intent:difference
-- Wo liegen die unterschiede zwischen der [Grippe](topic) und dem Covid19 Virus
-- Unterschied [Grippe](topic) Corona
-- Wie kann man zwischen dem Corona Virus und er [grippe](topic) unterschieden
-- inwiefern unterschieden sich Covid19 und die [Grippe](topic)
-- Inwieweit lassen sich die [Grippe](topic) und der Coronavirus vergleichen
-- Was ist der Unterschied zwischen Covid-19 und einer [Grippe](topic)?
-- Was unterscheidet Corona und [Grippe](topic)?
-- Ich möchte wissen, wie ich Covid-19 von einer [Grippe](topic) unterscheiden kann.
-- Was ist mit der normalen [Grippe](topic)?
-- Weißt du wo die unterschiede zur [grippe](topic) liegen
-- Was ist [SARS](topic)?
-- Was ist [MERS](topic)?
-- Ich möchte den Unterschied zu bekannten [Grippe](topic)-Epidemien erfahren.
-- Wo liegt der unterschied zwischen [Sars](topic) und Covid19
-- inwieweit lassen sich [Mers](topic) und das Coronavirus vergleichen.
-- Ist Covid19 so schlimm wie [Sars](topic)
-- ist das Coronavirus mit [Mers](topic) vergleichbar
-- Wird das Coronavirus so schlimm wie [Sars](topic)
-- ist Covid-19 so gefährlich wie [Mers](topic)
-- Kannst du mir sagen inwiefern sich [Mers](topic) und Corona unterscheiden
-- Weißt du ob es unterschiede zu [Sars](topic) gibt
-
-## intent:prpability_infection
+## intent: faq/prpability_infection
 - Was ist die Wahrscheinlichkeit dass man COVID-19 kriegt?
 - Wie warscheinlich ist es, dass ich COVID-19 kriege
 - Wahrscheinlichkiet dass ich das bekomme
@@ -93,7 +30,7 @@
 - Mit welcher Wahrscheinlichkeit werde ich mich infizieren.
 - Wie wahrscheinlich ist es das ich mich mit covid19 infiziere?
 
-## intent:symptoms
+## intent: faq/symptoms
 - Krankheitsverlauf
 - Wie sieht der Krankheitsverlauf aus
 - Wie verläuft die Krankheit
@@ -113,7 +50,7 @@
 - Mit welchen Symptomen ist zu rechnen
 - Was sind die Symptome
 
-## intent:antibiotics
+## intent: faq/antibiotics
 - Sind Antibiotika wirksam bei der Vorbeugung oder Behandlung des COVID-19?
 - Helfen Antibiotika dagegen?
 - Kann ich Antibiotikum nehmen?
@@ -125,7 +62,7 @@
 - Kann man Covid19 mit Antibiotia behandeln
 - Können Antibiotika nicht helfen?
 
-## intent:vaccine
+## intent: faq/vaccine
 - Kann man sich gegen COVID-19 impfen lassen?
 - Gibt es eine Impfung?
 - Gibt es Impfstoff oder Medikamenten?
@@ -138,7 +75,7 @@
 - Gibt es bald einen Impfstoff
 - Impfstoff für Corona
 
-## intent:quarantine
+## intent: faq/why_quarantine
 - Warum muss ich in Quarantäne?
 - Wann muss ich in Quarantäne?
 - Wie lange muss ich in Quarantäne?
@@ -147,7 +84,7 @@
 - Wieso muss man in Quaratäne
 - Wieso muss ich in quarantäne?
 
-## intent:corona_test
+## intent: faq/corona_test
 - Welche Tests gibt es?
 - Gibt es Tests?
 - Wie kann ich mich testen lassen?
@@ -155,7 +92,7 @@
 - Wie werden Tests durchgeführt?
 - Wie wird getestet?
 
-## intent:mortality
+## intent: faq/mortality
 - Wie ist die Sterblichkeitsrate?
 - Wieviele Leute sterben?
 - Wie hoch ist die Mortaliät
@@ -164,7 +101,7 @@
 - Wie hoch ist die Sterblichkeitsrate
 - Wie hoch ist die sterblichkeit
 
-## intent:affected_ages
+## intent: faq/affected_ages
 - Welche Altersgruppen sind von der Corona- Virus Infektion am stärksten betroffen?
 - Wer kann sich micht Corona-Virus anstecken?
 - Können sich nur ältere Menschen mit dem Corona-Virus anstecken?
@@ -172,7 +109,7 @@
 - Risiko für ältere
 - Welche altersgruppen sind am schlimmsten betroffen?
 
-## intent:treatment
+## intent: faq/treatment
 - Welche Behandlungsmöglichkeiten gibt es gegen den Corona-Virus?
 - Welche Medikamente wirken gegen das Corona-Virus?
 - Kann ich mich gegen das Corona-Virus durch Medikamente schützen? Medikamente?
@@ -184,59 +121,7 @@
 - Therapie für infizierte
 - Gibt es ein Medikament gegen Corona
 
-## intent:current_numbers
-- Wie viele bestätigte Corona-Virus [Infektionen](metric) gibt es in [Deutschland](location) zur Zeit?
-- Wie viele bestätigte Corona-Virus [Fälle](metric) gibt es in [Deutschland](location) zur Zeit?
-- Wie viele bestätigte Covid-19 [Fälle](metric) gibt es in [Hessen](location) zu Zeit?
-- Wie viele bestätigte Covid-19 [Fälle](metric) gibt es [Bundesweit](location) zu Zeit?
-- Anzahl Corona-Virus [Fälle](metric) [Baden-Württemberg](location)
-- Anzahl Corona-Virus [Fälle](metric) [Baden Württemberg](location)
-- Anzahl Covid-19 [Fälle](metric) [Bayern](location)
-- Wie schnell breitet sich das Corona-Virus in [Berlin](location) aus?
-- Wieviele sind [Infiziert](metric)
-- Wieviele sind [Infiziert](metric) in [Mecklenburg-Vorpommern](location)
-- Wieviele sind [Infiziert](metric) in [Mecklenburg Vorpommern](location)
-- Wieviele Menschen sind [infiziert](metric)
-- Wieviele Menschen sind [infiziert](metric) in [Niedersachsen](location)
-- Wie hoch sind die [Infektionszahlen](metric)
-- Wie hoch sind die [Infektionszahlen](metric) in [Brandenburg](location)
-- [Infektionszahlen](metric)
-- Wie hoch sind die [Infektionszahlen](metric) [Bremen](location)
-- [Infektionszahlen](metric) [Nordrhein-Westfalen](location)
-- [Infektionszahlen](metric) [Nordrhein Westfalen](location)
-- [Infektionszahlen](metric) [Rheinland-Pfalz](location)
-- Wieviele Menschen sind [infiziert](metric) [Saarland](location)
-- [Infektionszahlen](metric) [Sachsen](location)
-- Anzahl Covid-19 [Fälle](metric) [Sachsen-Anhalt](location)
-- [Infektionszahlen](metric) [Schleswig-Holstein](location)
-- Wie viele [Infiziert](metric)
-- Wie viele [Infiziert](metric) [Hamburg](location)
-- Wie viele [Infiziert](metric) [Thüringen](location)
-- Wie viele [Todesfälle](metric) gibt es aufgrund des Corona-Viruses in Deutschland zur Zeit?
-- Wie viele [Todesfälle](metric) gibt es auf Grund des Corona-Viruses in Deutschland zur Zeit?
-- Wie viele [Tote](metric) gibt es bis jetzt in Deutschland?
-- Anzahl [Tode](metric) Deutschland
-- Wieviele [Tote](metric)
-- Wieviele [Tote](metric) gibt es bereits
-- [Todeszahlen](metric)
-- Anzahl der [Toten](metric)
-- Kannst du sagen wieviele bereits [gestorben](metric) sind
-- Kannst du sagen wieviele bereits an Corona [gestorben](metric) sind
-- Wieviele sind [gestorben](metric)
-
-## intent:current_bundeslaender
-- Welche Bundesländer sind besonders stark von dem Corona-Virus betroffen?
-- Welche Bundesländer sind besonders stark von Covid19 betroffen?
-- Wo ist es am schlimmsten in Deutschland?
-- Anzahl Fälle Bundesländer
-- Welche Bundesländer sind am schwersten getroffen
-- In welchen Bundesländern ist es am schlimmsten
-- In welchem Bundeland sind die meisten Infizierten
-- In welchen Bundesländern sind die meisten personen infiziert
-- Welche Bundesländer haben die meisten infizierten
-- Bundeslaender infizierte
-
-## intent:tab_water
+## intent: faq/tab_water
 - Kann ich weiterhin Leitungswasser trinken?
 - Kann der Virus durch das Leitungswasser übertragen werden?
 - Kann das Virus durch Wasser in den Leitungen übertragen werden?
@@ -249,7 +134,7 @@
 - Kann ich mich von leitungswasser infizieren?
 - Kann ich leitungswasser trinken?
 
-## intent:protection
+## intent: faq/protection
 - Wie kann ich mich vor dem Coronavirus schützen
 - was kann ich tun um mich zu schützen?
 - Wie kann ich mich schützen
@@ -278,7 +163,7 @@
 - Prozess der Ansteckung
 - Wie steckt man sich an
 
-## intent:what_if_symptoms
+## intent: faq/what_if_symptoms
 - Was soll ich tun, wenn ich Symptome habe?
 - Was tue ich, wenn ich Corona habe?
 - Was tue ich, wenn ich glaube Covid19 zu haben?
@@ -291,7 +176,7 @@
 - Kann ich zum Arzt gehn?
 - Was wenn ich Symptome aufweise?
 
-## intent:should_test
+## intent: faq/should_test
 - Sollte ich mich testen lassen?
 - Wann muss ich mich testen lassen?
 - Wann muss ich zum Test?
@@ -302,7 +187,7 @@
 - Sollte ich mich auf Covid19 testen lassen
 - Brauche ich einen test auf das Coronavirus
 
-## intent:incubation_time
+## intent: faq/incubation_time
 - Wie ist die Inkubationszeit?
 - Wie lange ist die Inkubationszeit
 - Inkubationszeit
@@ -314,7 +199,7 @@
 - Wieviel zeit kann vergehen bis die ersten Symptome auftreten
 - Wie lange würde es dauern bis die ersten Symptome auftreten
 
-## intent:travel
+## intent: faq/travel
 - Kann ich reisen?
 - Kann ich in den urlaub fahren
 - Wie sieht es mit verreisen aus
@@ -328,7 +213,7 @@
 - ist es gestattet in den Urlaub zu fahren?
 - Darf ich denn noch reisen?
 
-## intent:return_from_infected_area
+## intent: faq/return_from_infected_area
 - Ich war in einem betroffenen Gebiet.
 - Ich war in einem Risikogebiet.
 - Kann ich aus einem Risikogebiet zurück?
