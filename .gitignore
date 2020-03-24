@@ -3,3 +3,4 @@ models/
 .idea
 __pycache__
 rasa_core.log
+story_graph.dot
