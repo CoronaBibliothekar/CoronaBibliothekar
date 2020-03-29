@@ -3,10 +3,9 @@ actions:
 - action_current_numbers
 - action_difference
 - action_what_is
-- utter_bye
 - utter_default
-- utter_greet
 - respond_faq
+- respond_smalltalk
 entities:
 - location
 - metric
@@ -15,20 +14,15 @@ intents:
 - what_is
 - difference
 - current_numbers
-- greet
-- goodbye
 - current_bundeslaender
 - faq
+- smalltalk
 responses:
-  utter_bye:
-  - text: Auf Wiedersehen !
   utter_default:
   - text: Ich fürchte ich habe das nicht verstanden. Ich kann dir jedoch deine Fragen
       zum Thema Coronavirus beantworten, wenn ich deine Frage zu Covid19 nihct beantworten
       kann schau doch mal bei https://www.who.int/news-room/q-a-detail/q-a-coronaviruses
       vorbei
-  utter_greet:
-  - text: Hallo
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60

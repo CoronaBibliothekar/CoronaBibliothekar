@@ -34,13 +34,8 @@
 * current_numbers
     - action_current_numbers
     
-## greet
-* greet
-    - utter_greet
-    
-## goodbye
-* goodbye
-    - utter_bye
+* smalltalk
+    - respond_smalltalk
 
 ## currently dead
 * current_numbers
@@ -52,8 +47,8 @@
     
     
 ## mix
-* greet
-    - utter_greet
+* smalltalk
+    - respond_smalltalk
 * current_numbers{"location": "Berlin"}
     - action_current_numbers
 * current_numbers
@@ -68,8 +63,8 @@
     - action_what_is
 * what_is{"topic": "covid"}
     - action_what_is
-* goodbye
-    - utter_bye
+* smalltalk
+    - respond_smalltalk
 
 ## faq
 * faq
@@ -82,3 +77,11 @@
     - respond_faq
 * faq
     - respond_faq
+    
+## smalltalk smalltalk smalltalk
+* smalltalk
+    - respond_smalltalk
+* smalltalk
+    - respond_smalltalk
+* smalltalk
+    - respond_smalltalk

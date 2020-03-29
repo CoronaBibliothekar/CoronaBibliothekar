@@ -1,6 +1,6 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: en
+language: de
 pipeline:
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
@@ -13,8 +13,13 @@ pipeline:
   - name: DIETClassifier
     epochs: 100
   - name: EntitySynonymMapper
-  - name: ResponseSelector
+  - name: "ResponseSelector"
+    retrieval_intent: faq
     epochs: 100
+  - name: "ResponseSelector"
+    retrieval_intent: smalltalk
+    epochs: 100
+
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
