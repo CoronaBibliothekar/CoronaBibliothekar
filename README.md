@@ -1,6 +1,8 @@
 # CoronaBibliothekar [#wirvsvirushack](https://twitter.com/hashtag/wirvsvirushack)
 Falsche Informationen in Social Media mit guten Quellen kontern! 
 
+[![CoronaBibliothekar YouTube Video](youtube.png)](https://www.youtube.com/watch?v=vI8uq_rt_BA)
+
 ## Inspiration
 In der derzeitigen Situation rund um das Corona-Virus kommt es darauf an, richtige Informationen einheitlich und schnell zu verteilen. Durch viele verschiedene Informationsquellen entstehen überlastete Hotlines bei Behörden, verzögern sich die Effekte wirkungsvoller Maßnahmen und Falschmeldungen werden begünstigt. Bereits bestehende Chatbots zum Thema Corona sind oft einfache Klickbots ohne Interaktion mit dem Nutzer. Sie sind isoliert auf Websites zu finden und haben geringe Reichweite.
 
@@ -9,6 +11,15 @@ Mit dem Chatbot CoronaBibliothekar schaffen wir eine Anlaufstelle direkt im Post
 
 ## Weg
 Der Prototyp des CoronaBibliothekars wird mit Rasa, einem Open Source Chatbot-Framework, erstellt. Der Chatbot soll über Telegram und Facebook Messenger erreichbar und getestet werden. Aktuelle Daten werden von der Seite des RKI geladen.
+
+## Ergebnis
+
+Der CoronaBibliothekar war über Facebook Messenger, sowie Telegram erreichbar.
+
+### Facebook
+![Facebook Screenshot](facebook.png)
+### Telegram
+![Telegram Screenshot](telegram.png)
 
 ## weitere Informationen
 Weitere Informationen zu diesem Projekt finden sie auf [Devpost](https://devpost.com/software/1_039_staatlichekommunikation_coronabibliothekar)
